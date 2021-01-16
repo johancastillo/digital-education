@@ -9,6 +9,12 @@
     width: 100px;
 }
 
+.navigation .box-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .navigation .icon{
     font-size: 20px;
     margin: 0 10px;

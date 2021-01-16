@@ -6,6 +6,7 @@ const Navigation = () => {
         <header className="navigation">
             <div className="box-logo">
                 <img src={logo} alt=""/>
+                <span>Digital Education</span>
             </div>
 
             <div className="box-search">
@@ -20,7 +21,7 @@ const Navigation = () => {
                 <div>
                     <span className="icon icon-user"></span>
                 </div>
-                
+
                 <div className="cart">
                     <span className="number">3</span>
                     <span className="icon icon-cart"></span>
