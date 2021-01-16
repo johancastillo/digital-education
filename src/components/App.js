@@ -5,15 +5,27 @@ import Home from '../pages/home/Home';
 import PageNotFound from '../pages/page-not-found/PageNotFond';
 import SingleProduct from '../pages/single-product/SingleProduct';
 
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const App = () => {
   return (
     <Router>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>
+          <Link to="/">Inicio</Link>
+        </li>
+
+        <li>
+          <Link to="/about">Acerca de</Link>
+        </li>
+
+        <li>
+          <Link to="/category">Categoría</Link>
+        </li>
+
+        <li>
+          <Link to="/single-product">Producto</Link>
+        </li>
       </ul>
 
       <Switch>
