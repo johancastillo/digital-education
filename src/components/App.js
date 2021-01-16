@@ -11,8 +11,9 @@ import Navigation from './navigation/Navigation';
 const App = () => {
   return (
     <Router>
+      <Navigation />
+      
       <ul>
-        <Navigation />
         <li>
           <Link to="/">Inicio</Link>
         </li>

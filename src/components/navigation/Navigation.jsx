@@ -5,22 +5,21 @@ const Navigation = () => {
     return (
         <header className="navigation">
             <div className="box-logo">
+                <span className="icon-menu"></span>
                 <img src={logo} alt=""/>
-                <span>Digital Education</span>
+
+                <span className="logo-text">Digital Education</span>
             </div>
 
             <div className="box-search">
-                <input type="text" />
+                <input type="text" placeholder="Buscar..." />
             </div>
 
             <div className="box-icons">
-                <div>
-                    <span className="icon icon-bookmark-full"></span>
-                </div>
+                <span className="icon icon-search"></span>
                 
-                <div>
-                    <span className="icon icon-user"></span>
-                </div>
+                <span className="icon icon-bookmark-full"></span>
+                
 
                 <div className="cart">
                     <span className="number">3</span>

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 10px;
 }
 
 .navigation img{
@@ -42,3 +42,28 @@
     align-items: center;
     padding: 2px;
 }
+
+.navigation .icon-menu{
+    font-size: 30px;
+}
+
+@media screen and (max-width: 750px){
+    .navigation .box-search{
+        display: none;
+    }
+
+    .navigation img{
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .navigation .logo-text{
+        display: none;
+    }
+
+    .navigation img{
+        width: 62px;
+    }
+}
+
