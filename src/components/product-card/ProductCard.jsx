@@ -17,7 +17,7 @@ const ProductCard = ({ title, image }) => {
                     </div>
 
                     <div>
-                        <span className="icon-bookmark-void"></span>
+                        <span className="icon-bookmark-void" style={{fontSize: "28px"}}></span>
                     </div>
                 </div>
 
