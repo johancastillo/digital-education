@@ -12,3 +12,9 @@
     top: 40px;
     left: 20px;
 }
+
+@media screen and (max-width: 692px){
+    .banner .form{
+        display: none;
+    }
+}
