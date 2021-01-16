@@ -1,8 +1,12 @@
+import Banner from "../../components/banner/Banner"
+import CategoriesSection from "../../components/categories-section/CategoriesSection"
 import ProductCard from "../../components/product-card/ProductCard"
 import "./Home.css"
 
 const Home = () => {
     return (
+        <>
+        <Banner />
         <div className="gallery">
             <ProductCard
                 course="1"
@@ -64,6 +68,9 @@ const Home = () => {
                 title="Docker desde cero"
             />
         </div>
+
+        <CategoriesSection />
+        </>
     )
 }
 
