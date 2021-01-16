@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
 }
 
 .navigation img{
@@ -32,7 +33,7 @@
     position: absolute;
     top: -10px;
     left: 48%;
-    background: blue;
+    background: var(--color-one);
     border-radius: 50%;
     color: #fff;
     width: 18px;
@@ -67,3 +68,24 @@
     }
 }
 
+/* *******
+** Menu **
+******* */
+.menu{
+    width: 45%;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    z-index: 33;
+    height: 100vh;
+
+    transition: all 1s;
+}
+
+.menu-hidden{
+    left: -200vw;
+}
+
+.menu-active{
+    left: 0;
+}

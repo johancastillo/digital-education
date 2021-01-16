@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import About from '../pages/about/About';
 import Category from '../pages/category/Category';
 import Home from '../pages/home/Home';
@@ -12,24 +12,6 @@ const App = () => {
   return (
     <Router>
       <Navigation />
-      
-      <ul>
-        <li>
-          <Link to="/">Inicio</Link>
-        </li>
-
-        <li>
-          <Link to="/about">Acerca de</Link>
-        </li>
-
-        <li>
-          <Link to="/category">Categoría</Link>
-        </li>
-
-        <li>
-          <Link to="/single-product">Producto</Link>
-        </li>
-      </ul>
 
       <Switch>
         <Route exact path="/" component={Home} />
