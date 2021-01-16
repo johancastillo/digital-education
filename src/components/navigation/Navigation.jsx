@@ -66,7 +66,7 @@ class Navigation extends Component{
                         </li>
     
                         <li>
-                            <Link to="/about">Acerca de</Link>
+                            <Link to="/about">¿Quienes somos?</Link>
                         </li>
     
                         <li>

@@ -89,3 +89,9 @@
 .menu-active{
     left: 0;
 }
+
+@media screen and (max-width: 530px){
+    .menu{
+        width: 75%;
+    }
+}

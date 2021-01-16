@@ -4,7 +4,7 @@ import "./Banner.css"
 const Banner = () => {
     return (
         <div className="banner">
-            <img src={banner} alt="" width="100%" />
+            <img className="banner-img" src={banner} alt=""  />
             
             <form className="form">
                 <h2>Sueña a lo grande</h2>
