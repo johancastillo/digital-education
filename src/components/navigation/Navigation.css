@@ -1,0 +1,38 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navigation img{
+    width: 100px;
+}
+
+.navigation .icon{
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.navigation .cart{
+    position: relative;
+}
+
+.navigation .box-icons{
+    display: flex;
+}
+
+.navigation .cart .number{
+    position: absolute;
+    top: -10px;
+    left: 48%;
+    background: blue;
+    border-radius: 50%;
+    color: #fff;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}

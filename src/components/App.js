@@ -6,11 +6,13 @@ import PageNotFound from '../pages/page-not-found/PageNotFond';
 import SingleProduct from '../pages/single-product/SingleProduct';
 
 import "bootstrap/dist/css/bootstrap.min.css"
+import Navigation from './navigation/Navigation';
 
 const App = () => {
   return (
     <Router>
       <ul>
+        <Navigation />
         <li>
           <Link to="/">Inicio</Link>
         </li>
