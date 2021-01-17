@@ -1,7 +1,10 @@
+import "./SingleProduct.css"
 
 const SingleProduct = () => {
     return (
-        <h1>Single Product Page</h1>
+        <div className="single-product">
+            <h1>Single Product Page</h1>
+        </div>
     )
 }
 

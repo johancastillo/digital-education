@@ -4,6 +4,7 @@
 
 .banner .banner-img{
     width: 100%;
+    margin-top: 76px;
 }
 
 .banner .form{
@@ -13,12 +14,13 @@
     padding: 20px;
     width: 350px;
     position: absolute;
-    top: 40px;
+    top: 150px;
     left: 20px;
 }
 
 @media screen and (max-width: 692px){
     .banner .form{
         position: static;
+        width: 100%;
     }
 }

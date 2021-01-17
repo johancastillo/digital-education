@@ -1,7 +1,10 @@
+import "./Category.css"
 
 const Category = () => {
     return (
-        <h1>Category Page</h1>
+        <div className="category">
+            <h1>Category Page</h1>
+        </div>
     )
 }
 

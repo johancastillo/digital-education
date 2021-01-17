@@ -62,7 +62,10 @@ class Navigation extends Component{
                 <nav className={`menu ${this.state.menu}`}>
                     <ul>
                         <li>
-                            <Link to="/">Inicio</Link>
+                            <Link to="/">
+                                <span className="icon-home"></span> 
+                                <span>Inicio</span>
+                            </Link>
                         </li>
     
                         <li>
@@ -77,6 +80,11 @@ class Navigation extends Component{
                             <Link to="/single-product">Producto</Link>
                         </li>
                     </ul>
+
+                    <div className="d-flex ">
+                        <span className="icon icon-log-in"></span>
+                        <p style={{marginLeft: '10px'}}>Cerrar sesión</p>
+                    </div>
                 </nav>
             </>
         )

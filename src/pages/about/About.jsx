@@ -8,8 +8,8 @@ import './About.css'
 
 const About = () => {
     return (
-        <>  
-            <h3 className="text-center mt-4">Aplicación desarrollada por:</h3>
+        <div className="about">  
+            <h3 className="text-center">Aplicación desarrollada por:</h3>
             <div className="section team-dev">
                 <UserCard
                     name="Johan Castillo"
@@ -34,7 +34,7 @@ const About = () => {
                     role="Copywriter"
                 />
             </div>
-        </>
+        </div>
     )
 }
 

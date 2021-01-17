@@ -1,3 +1,7 @@
+.about{
+    margin-top: 114px;
+}
+
 .team-dev{
     display: grid;
     grid-template-columns: repeat(2, 1fr);

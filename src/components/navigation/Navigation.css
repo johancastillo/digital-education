@@ -4,6 +4,12 @@
     align-items: center;
     padding: 20px 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+
+    position: fixed;
+    top: 0 !important;
+    width: 100%;
+    z-index: 10;
+    background: #fff;
 }
 
 .navigation img{
@@ -72,6 +78,7 @@
 ** Menu **
 ******* */
 .menu{
+    padding: 20px;
     width: 45%;
     position: fixed;
     top: 0;
@@ -80,6 +87,28 @@
     height: 100vh;
 
     transition: all 1s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu ul{
+    padding: 0 !important;
+}
+
+.menu ul li{
+    list-style: none !important;
+    margin: 12px 0;
+}
+
+.menu ul li a{
+    text-decoration: none !important;
+    color: #000;
+}
+
+.icon{
+    font-size: 20px !important;
 }
 
 .menu-hidden{
