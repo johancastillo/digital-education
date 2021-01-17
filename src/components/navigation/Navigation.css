@@ -86,7 +86,7 @@
     z-index: 33;
     height: 100vh;
 
-    transition: all 1s;
+    transition: all .5s;
 
     display: flex;
     flex-direction: column;

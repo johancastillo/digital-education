@@ -8,3 +8,14 @@ a{
     list-style: none !important;
     color: #000 !important;
 }
+
+.teacher{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teacher .teacher-img{
+    border-radius: 50%;
+    width: 40px;
+}

@@ -7,11 +7,11 @@ const Banner = () => {
             <img className="banner-img" src={banner} alt=""  />
             
             <form className="form">
-                <h2>Sueña a lo grande</h2>
+                <h3>Transforma tus sueños y hazlo realidad</h3>
                 
                 <p>
-                    Ambición aceptada. Aprende las últimas habilidades para 
-                    alcanzar tus objetivos profesionales.
+                    Mejora como profesional y adquiere los conocimientos que 
+                    necesitas para lograr tus metas.
                 </p>
 
                 <div class="mb-3">

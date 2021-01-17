@@ -5,13 +5,13 @@
     grid-gap: 20px;
 }
 
-@media screen and (max-width: 743px){
+@media screen and (max-width: 746px){
     .gallery{
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width: 527px){
+@media screen and (max-width: 645px){
     .gallery{
         grid-template-columns: 1fr;
     }
