@@ -1,7 +1,9 @@
 import "./ProductCard.css"
+import {Link} from 'react-router-dom'
 
 const ProductCard = ({ title, image }) => {
     return (
+        <Link to="/cursos/html/1-1">
         <div class="card" style={{ width: '100%' }}>
             <img src={image} class="card-img-top" alt="..." />
             <div class="card-body">
@@ -28,6 +30,7 @@ const ProductCard = ({ title, image }) => {
                 <a href="#" class="btn btn-primary">Comprar ahora</a>
             </div>
         </div>
+        </Link>
     )
 }
 

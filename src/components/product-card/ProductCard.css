@@ -2,3 +2,9 @@
     color: #e0e000 !important;
     font-size: 20px;
 }
+
+a{
+    text-decoration: none !important;
+    list-style: none !important;
+    color: #000 !important;
+}
