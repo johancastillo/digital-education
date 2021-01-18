@@ -4,7 +4,7 @@
 
 .banner .banner-img{
     width: 100%;
-    margin-top: 76px;
+    margin-top: 114px !important;
     max-height: 684px;
     border-radius: 4px;
 }
@@ -16,8 +16,8 @@
     padding: 20px;
     width: 350px;
     position: absolute;
-    top: 150px;
-    left: 20px;
+    top: 210px;
+    left: 40px;
 }
 
 @media screen and (min-width: 1300px){
