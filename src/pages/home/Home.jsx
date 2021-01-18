@@ -3,6 +3,7 @@ import CategoriesSection from "../../components/categories-section/CategoriesSec
 import ProductCard from "../../components/product-card/ProductCard"
 import "./Home.css"
 
+
 const Home = () => {
     return (
         <>
