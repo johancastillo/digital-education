@@ -1,4 +1,4 @@
-import banner from './banner.jpg'
+import banner from './banner.png'
 import "./Banner.css"
 
 const Banner = () => {

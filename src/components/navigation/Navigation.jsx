@@ -38,7 +38,7 @@ class Navigation extends Component{
                         <span className="logo-text">Digital Education</span>
                     </div>
     
-                    <div className="box-search">
+                    <div className="box-search" style={{display: 'none'}}>
                         <input type="text" placeholder="Buscar..." />
                     </div>
     

@@ -6,7 +6,7 @@ import "./Home.css"
 
 const Home = () => {
     return (
-        <>
+        <div className="home">
         <Banner />
         <div className="gallery">
             <ProductCard
@@ -131,7 +131,7 @@ const Home = () => {
         </div>
 
         <CategoriesSection />
-        </>
+        </div>
     )
 }
 

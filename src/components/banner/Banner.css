@@ -5,6 +5,8 @@
 .banner .banner-img{
     width: 100%;
     margin-top: 76px;
+    max-height: 684px;
+    border-radius: 4px;
 }
 
 .banner .form{
@@ -16,6 +18,12 @@
     position: absolute;
     top: 150px;
     left: 20px;
+}
+
+@media screen and (min-width: 1300px){
+    .banner .form{
+        width: 460px !important;
+    }
 }
 
 @media screen and (max-width: 692px){
