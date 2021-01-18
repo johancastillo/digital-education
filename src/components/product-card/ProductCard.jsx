@@ -55,7 +55,7 @@ const ProductCard = ({ courseID, title, image, stars, type, price, teacher, teac
                     {description}
                 </p>
 
-                <div className="d-flex justify-content-between">
+                <div className="card-footer px-0">
                     <div className="teacher">
                         <img className="teacher-img" src={teacherImg} alt="" />
                         <span style={{ marginLeft: '5px' }}>{teacher}</span>
@@ -66,6 +66,7 @@ const ProductCard = ({ courseID, title, image, stars, type, price, teacher, teac
                         <span className="price"> {`$${price} USD`} </span>
                     </div>
                 </div>
+
             </div>
         </div>
     )

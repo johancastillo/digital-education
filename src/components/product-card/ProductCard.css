@@ -19,3 +19,9 @@ a{
     border-radius: 50%;
     width: 40px;
 }
+
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
