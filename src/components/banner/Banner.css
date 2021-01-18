@@ -9,25 +9,34 @@
     border-radius: 4px;
 }
 
-.banner .form{
-    background: #fff;
+.banner .box-container{
+    background-color: rgba(255, 255, 255, .6);
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
-    padding: 20px;
-    width: 350px;
+    padding: 30px;
+    width: 384px;
     position: absolute;
     top: 210px;
     left: 40px;
 }
 
-@media screen and (min-width: 1300px){
-    .banner .form{
-        width: 460px !important;
+.banner .form{
+    opacity: 1 !important;
+}
+
+.banner .form input{
+    background-color: rgba(255, 255, 255, .5) !important;
+}
+
+@media screen and (min-width: 1080px){
+    .banner .box-container{
+        width: 533px !important;
+        padding: 60px 40px;
     }
 }
 
 @media screen and (max-width: 692px){
-    .banner .form{
+    .banner .box-container{
         position: static;
         width: 100%;
     }
