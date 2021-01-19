@@ -8,7 +8,7 @@ import './About.css'
 
 const About = () => {
     return (
-        <div className="about">  
+        <div className="about">
             <h3 className="text-center">Aplicación desarrollada por:</h3>
             <div className="section team-dev">
                 <UserCard
@@ -28,10 +28,16 @@ const About = () => {
 
             <h3 className="text-center">Equipo</h3>
             <div className="section team">
-                <UserCard 
+                <UserCard
                     name="Celmira Rojas"
                     image={famale}
                     role="Copywriter"
+                />
+
+                <UserCard
+                    name="Yoiberth Paredes"
+                    image={male}
+                    role="SEO Manager"
                 />
             </div>
         </div>
