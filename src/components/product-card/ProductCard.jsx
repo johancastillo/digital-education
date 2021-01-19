@@ -63,7 +63,14 @@ const ProductCard = ({ courseID, title, image, stars, type, price, teacher, teac
 
                     <div className="price">
                         <span className="icon-cart"></span>
-                        <span className="price"> {`$${price} USD`} </span>
+                        
+                        {
+                            price === 'free' ? 
+                            <span className="price" style={{color: 'red', marginLeft: '8px'}}>¡Gratis!</span> 
+                            : 
+                            <span className="price" style={{marginLeft: '8px'}}>{`$${price} USD`} </span> 
+                        }
+
                     </div>
                 </div>
 
