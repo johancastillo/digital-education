@@ -10,6 +10,8 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import Navigation from './components/navigation/Navigation'
 import Course from './pages/course/Course'
 import Cart from './pages/cart/Cart'
+import Favorites from './pages/favorites/Favorites'
+
 
 const App = () => {
   return (
@@ -24,6 +26,7 @@ const App = () => {
         <Route exact path="/admin" component={Admin} />
         <Route exact path="/cursos/html/1-1" component={Course} />
         <Route exact path="/cart" component={Cart} />
+        <Route exact path="/favorites" component={Favorites} />
         
         <Route component={PageNotFound}  />
       </Switch>

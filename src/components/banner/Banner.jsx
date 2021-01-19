@@ -1,7 +1,15 @@
+import {useState} from 'react'
 import banner from './banner.webp'
 import "./Banner.css"
 
 const Banner = () => {
+    const [search, setSearch] = useState('')
+    console.log(search)
+
+    const handleChange = e => {
+        setSearch(e.target.value)
+    }
+
     return (
         <div className="banner">
             <img className="banner-img" src={banner} alt="" />
@@ -16,7 +24,7 @@ const Banner = () => {
                     </p>
 
                     <div class="mb-3">
-                        <input type="email" placeholder="¿Qué quieres aprender?" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                        <input type="text" onChange={handleChange} placeholder="¿Qué quieres aprender?" className="form-control" />
                     </div>
 
                 </form>

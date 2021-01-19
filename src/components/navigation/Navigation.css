@@ -39,6 +39,7 @@
     position: absolute;
     top: -10px;
     left: 48%;
+    font-size: 12px;
     background: var(--color-one);
     border-radius: 50%;
     color: #fff;

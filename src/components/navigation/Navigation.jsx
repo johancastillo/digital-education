@@ -1,94 +1,83 @@
-import React, {Component} from 'react'
+import { useState } from 'react'
 import "./Navigation.css"
 import logo from './logo.svg'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 
-class Navigation extends Component{
+const Navigation = () => {
+    const [menu, setMenu] = useState('menu-hidden')
+    const [cart, setCart] = useState([])
 
-    constructor(props){
-        super(props)
-
-        this.state = {
-            menu: 'menu-hidden'
-        }
-
-        this.closeMenu = this.closeMenu.bind(this)
-        this.openMenu = this.openMenu.bind(this)
-    }
-
-    closeMenu(){ 
-        this.setState({menu: 'menu-hidden'})
-    }
-
-    openMenu(){
-        this.setState({menu: 'menu-active'})
-    }
+    const closeMenu = () => setMenu('menu-hidden')
+    const openMenu = () => setMenu('menu-active')
 
 
-    render(){
-        return (
-            <>
-                <header className="navigation">
-                    <div className="box-logo">
-                        <span className="icon-menu" onClick={this.openMenu}></span>
-                        <img src={logo} alt="" />
-    
-                        <span className="logo-text">Digital Education</span>
-                    </div>
-    
-                    <div className="box-search" style={{display: 'none'}}>
-                        <input type="text" placeholder="Buscar..." />
-                    </div>
-    
-                    <div className="box-icons">
-                        
-                        <span className="icon icon-search" style={this.state.menu === 'menu-hidden' ? {display: 'block'} : {display: 'none'}}></span>
-    
-                        <span className="icon icon-bookmark-void" style={this.state.menu === 'menu-hidden' ? {display: 'block'} : {display: 'none'}}></span>
-    
-    
-                        <div className="cart" style={this.state.menu === 'menu-hidden' ? {display: 'block'} : {display: 'none'}}>
-                            <span className="number">3</span>
+    return (
+        <>
+            <header className="navigation">
+                <div className="box-logo">
+                    <span className="icon-menu" onClick={openMenu}></span>
+                    <img src={logo} alt="logo" />
+
+                    <span className="logo-text">Digital Education</span>
+                </div>
+
+                <div className="box-search" style={{ display: 'none' }}>
+                    <input type="text" placeholder="Buscar..." />
+                </div>
+
+                <div className="box-icons">
+
+                    <span className="icon icon-search" style={menu === 'menu-hidden' ? { display: 'block' } : { display: 'none' }}></span>
+
+                    <Link to="/favorites">
+                        <span className="icon icon-bookmark-void" style={menu === 'menu-hidden' ? { display: 'block' } : { display: 'none' }}></span>
+                    </Link>
+
+                    <div className="cart" style={menu === 'menu-hidden' ? { display: 'block' } : { display: 'none' }}>
+                        <Link to="/cart">
+                            <span className="number">
+                                {cart.length}
+                            </span>
                             <span className="icon icon-cart"></span>
-                        </div>
-    
-                        <span className="icon icon-x" onClick={this.closeMenu} 
-                                style={ this.state.menu === 'menu-active' ? {display: 'block'} : {display: 'none'}}></span>
+                        </Link>
                     </div>
-                </header>
-    
-                <nav className={`menu ${this.state.menu}`}>
-                    <ul>
-                        <li>
-                            <Link to="/">
-                                <span className="icon-home"></span> 
-                                <span>Inicio</span>
-                            </Link>
-                        </li>
-    
-                        <li>
-                            <Link to="/about">¿Quienes somos?</Link>
-                        </li>
-    
-                        <li>
-                            <Link to="/category">Categoría</Link>
-                        </li>
-    
-                        <li>
-                            <Link to="/single-product">Producto</Link>
-                        </li>
-                    </ul>
 
-                    <div className="d-flex ">
-                        <span className="icon icon-log-in"></span>
-                        <p style={{marginLeft: '10px'}}>Cerrar sesión</p>
-                    </div>
-                </nav>
-            </>
-        )
-    }
+                    <span className="icon icon-x" onClick={closeMenu}
+                        style={menu === 'menu-active' ? { display: 'block' } : { display: 'none' }}></span>
+                </div>
+            </header>
+
+            <nav className={`menu ${menu}`}>
+                <ul>
+                    <li>
+                        <Link to="/">
+                            <span className="icon-home"></span>
+                            <span>Inicio</span>
+                        </Link>
+                    </li>
+
+                    <li>
+                        <Link to="/about">¿Quienes somos?</Link>
+                    </li>
+
+                    <li>
+                        <Link to="/category">Categoría</Link>
+                    </li>
+
+                    <li>
+                        <Link to="/single-product">Producto</Link>
+                    </li>
+                </ul>
+
+                <div className="d-flex ">
+                    <span className="icon icon-log-in"></span>
+                    <p style={{ marginLeft: '10px' }}>Cerrar sesión</p>
+                </div>
+            </nav>
+        </>
+    )
 }
 
 export default Navigation
