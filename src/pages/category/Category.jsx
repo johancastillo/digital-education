@@ -10,10 +10,16 @@ const Category = () => {
     return (
         <div className="category">
             {/* HEADER START */}
-            <div className="header">
+            <div className="header d-flex">
                 <button type="button" class="btn btn-outline-danger">
                     Filtrar (0)
                 </button>
+
+                <select class="form-select" style={{width: '160px', marginLeft: '10px'}}>
+                    <option selected value="1">Más populares</option>
+                    <option value="2">Más recientes</option>
+                    <option value="3">Mejor valorados</option>
+                </select>
 
                 <button type="button" class="btn btn-outline-danger" style={{ marginLeft: '10px' }}>
                     Borrar filtros
@@ -32,7 +38,16 @@ const Category = () => {
 
                     {/* COURSES LIST START */}
                     <div className="col-md-8">
-                        <CourseCardVertical />
+                        {
+                            courses.map( course => {
+                                return(
+                                    <CourseCardVertical 
+                                        image={course.image}
+                                        title={course.title}
+                                    />
+                                )
+                            })
+                        }
                     </div>
                     {/* COURSES LIST END */}
                 </div>
