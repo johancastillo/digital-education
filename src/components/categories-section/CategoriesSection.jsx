@@ -16,6 +16,7 @@ const CategoriesSection = () => {
         <div className="section">
             <h2>Categorias principales</h2>
             <div className="categories">
+                
                 <CategoryCard
                     categoryID="1"
                     name="Diseño"
