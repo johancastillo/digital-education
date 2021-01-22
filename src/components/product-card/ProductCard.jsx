@@ -21,7 +21,7 @@ const ProductCard = ({ courseID, title, image, stars, type, price, teacher, teac
     const boxStars = starsValidator[stars]
 
     return (
-        <div class="card" style={{ width: '100%' }}>
+        <div class="card" style={{ width: '100%' }} key={courseID}>
             <Link to="/cursos/html/1-1">
                 <img src={image} class="card-img-top" alt="..." />
             </Link>

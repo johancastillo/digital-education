@@ -4,7 +4,7 @@ import CategoriesSection from "../../components/categories-section/CategoriesSec
 import ProductCard from "../../components/product-card/ProductCard"
 import "./Home.css"
 // Data
-import data from './data.json'
+import data from '../../data.json'
 
 
 const Home = () => {

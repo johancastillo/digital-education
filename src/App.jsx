@@ -11,27 +11,32 @@ import Navigation from './components/navigation/Navigation'
 import Course from './pages/course/Course'
 import Cart from './pages/cart/Cart'
 import Favorites from './pages/favorites/Favorites'
+import AppProvider from './context/AppProvider'
+import Consumer from './Consumer'
 
 
 const App = () => {
   return (
-    <Router>
-      <Navigation />
+    <AppProvider>
+      <Router>
+        <Navigation />
+        <Consumer />
 
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/development" component={Category} />
-        <Route exact path="/single-product" component={SingleProduct} />
-        <Route exact path="/admin" component={Admin} />
-        <Route exact path="/cursos/html/1-1" component={Course} />
-        <Route exact path="/cart" component={Cart} />
-        <Route exact path="/favorites" component={Favorites} />
-        
-        <Route component={PageNotFound}  />
-      </Switch>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/development" component={Category} />
+          <Route exact path="/single-product" component={SingleProduct} />
+          <Route exact path="/admin" component={Admin} />
+          <Route exact path="/cursos/html/1-1" component={Course} />
+          <Route exact path="/cart" component={Cart} />
+          <Route exact path="/favorites" component={Favorites} />
 
-    </Router>
+          <Route component={PageNotFound} />
+        </Switch>
+
+      </Router>
+    </AppProvider>
   )
 }
 
