@@ -22,12 +22,12 @@ const ProductCard = ({ courseID, title, image, stars, type, price, teacher, teac
     const boxStars = starsValidator[stars]
 
     return (
-        <div class="card" style={{ width: '100%' }} key={courseID}>
+        <div className="card" style={{ width: '100%' }} key={courseID}>
             <Link to="/cursos/html/1-1">
-                <img src={image} class="card-img-top" alt="..." />
+                <img src={image} className="card-img-top" alt="..." />
             </Link>
-            <div class="card-body">
-                <h5 class="card-title">{title}</h5>
+            <div className="card-body">
+                <h5 className="card-title">{title}</h5>
 
                 <div className="d-flex justify-content-between">
                     <div className="d-flex">
@@ -49,10 +49,10 @@ const ProductCard = ({ courseID, title, image, stars, type, price, teacher, teac
                 </div>
 
                 <div>
-                    <span class="badge bg-danger"> {type} </span>
+                    <span className="badge bg-danger"> {type} </span>
                 </div>
 
-                <p class="card-text pt-2">
+                <p className="card-text pt-2">
                     {description}
                 </p>
 

@@ -1,24 +1,24 @@
 
 const CourseCardVertical = ({image, title, description}) => {
     return (
-        <div class="card mb-3" style={{width: '100%'}}>
-            <div class="row g-0">
+        <div className="card mb-3" style={{width: '100%'}}>
+            <div className="row g-0">
                 
-                <div class="col-md-6">
+                <div className="col-md-6">
                     <img src={image} alt={title} style={{width: '100%'}} />
                 </div>
 
-                <div class="col-md-6">
-                    <div class="card-body">
-                        <h5 class="card-title">
+                <div className="col-md-6">
+                    <div className="card-body">
+                        <h5 className="card-title">
                             {title}
                         </h5>
 
-                        <p class="card-text">
+                        <p className="card-text">
                             {description}    
                         </p>
                         
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
             </div>

@@ -11,14 +11,17 @@ import Navigation from './components/navigation/Navigation'
 import Course from './pages/course/Course'
 import Cart from './pages/cart/Cart'
 import Favorites from './pages/favorites/Favorites'
-import AppProvider from './context/AppProvider'
+import { useContext } from 'react'
+import AppContext from './context/AppContext'
 
 
 const App = () => {
+  const {cartProducts} = useContext(AppContext)
+
   return (
-    <AppProvider>
+    
       <Router>
-        <Navigation />
+        <Navigation cartNum={cartProducts} />
 
         <Switch>
           <Route exact path="/" component={Home} />
@@ -34,7 +37,6 @@ const App = () => {
         </Switch>
 
       </Router>
-    </AppProvider>
   )
 }
 

@@ -9,9 +9,9 @@ import AppContext from '../../context/AppContext'
 
 
 const Home = () => {
-    const [courses, setCourses] = useState(data)
+    const [courses] = useState(data)
 
-    const { filter, setFilter, searching, setSearching } = React.useContext(AppContext)
+    const { filter, searching} = React.useContext(AppContext)
 
     return (
         <div className="home">
@@ -29,6 +29,7 @@ const Home = () => {
                             if(validation){
                                 return (
                                     <ProductCard
+                                        key={course.courseID}
                                         courseID={course.id}
                                         image={course.image}
                                         title={course.title}
@@ -46,6 +47,7 @@ const Home = () => {
                         courses.map(course => {
                             return (
                                 <ProductCard
+                                    key={course.courseID}
                                     courseID={course.id}
                                     image={course.image}
                                     title={course.title}

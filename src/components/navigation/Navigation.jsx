@@ -3,12 +3,12 @@ import "./Navigation.css"
 import logo from './logo.svg'
 import { Link } from 'react-router-dom'
 import AppContext from '../../context/AppContext'
+import NavIcons from '../nav-icons/NavIcons'
 
 
 
-const Navigation = () => {
-    const [menu, setMenu] = useState('menu-hidden')
-    const {cartProducts, setCartProducts} = useContext(AppContext)
+const Navigation = ({cartNum}) => {
+    const {cartProducts, menu, setMenu} = useContext(AppContext)
 
     const closeMenu = () => setMenu('menu-hidden')
     const openMenu = () => setMenu('menu-active')
@@ -28,29 +28,17 @@ const Navigation = () => {
                     <input type="text" placeholder="Buscar..." />
                 </div>
 
-                <div className="box-icons">
-
-                    <span className="icon icon-search" style={menu === 'menu-hidden' ? { display: 'block' } : { display: 'none' }}></span>
-
-                    <Link to="/favorites">
-                        <span className="icon icon-bookmark-void" style={menu === 'menu-hidden' ? { display: 'block' } : { display: 'none' }}></span>
-                    </Link>
-
-                    <div className="cart" style={menu === 'menu-hidden' ? { display: 'block' } : { display: 'none' }}>
-                        <Link to="/cart">
-                            <span className="number">
-                                {cartProducts.length}
-                            </span>
-                            <span className="icon icon-cart"></span>
-                        </Link>
-                    </div>
-
-                    <span className="icon icon-x" onClick={closeMenu}
-                        style={menu === 'menu-active' ? { display: 'block' } : { display: 'none' }}></span>
-                </div>
+                <NavIcons 
+                    cartNum={cartNum} 
+                    menu={menu}
+                />
             </header>
 
             <nav className={`menu ${menu}`}>
+                <div>
+                    <span className="icon icon-x" onClick={closeMenu}></span>
+                </div>
+
                 <ul>
                     <li>
                         <Link to="/">

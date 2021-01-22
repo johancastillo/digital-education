@@ -14,7 +14,7 @@ const BtnPrice = ({price, courseID}) => {
     }
     
     return(
-        <button id={courseID} type="button" class="btn btn-outline-dark" onClick={handleClick} >
+        <button id={courseID} type="button" className="btn btn-outline-dark" onClick={handleClick} >
             <span className="icon-cart"></span>
             <span className="price" style={{marginLeft: '8px'}}>{`$${price} USD`} </span>
         </button>

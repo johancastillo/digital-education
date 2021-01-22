@@ -7,7 +7,7 @@ import banner2 from './banner2.jpg'
 
 
 const Banner = () => {
-    const {filter, setFilter, searching, setSearching} = React.useContext(AppContext)
+    const {setFilter, setSearching} = React.useContext(AppContext)
 
     const handleSearch = e => {
         if(e.target.value){
@@ -33,7 +33,7 @@ const Banner = () => {
                         necesitas para lograr tus metas.
                     </p>
 
-                    <div class="mb-3">
+                    <div className="mb-3">
                         <input type="text" onChange={handleSearch} placeholder="¿Qué quieres aprender?" className="form-control" />
                     </div>
 
