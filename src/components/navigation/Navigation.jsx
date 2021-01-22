@@ -1,13 +1,14 @@
-import { useState } from 'react'
+import {useContext, useState } from 'react'
 import "./Navigation.css"
 import logo from './logo.svg'
 import { Link } from 'react-router-dom'
+import AppContext from '../../context/AppContext'
 
 
 
 const Navigation = () => {
     const [menu, setMenu] = useState('menu-hidden')
-    const [cart, setCart] = useState([])
+    const {cartProducts} = useContext(AppContext)
 
     const closeMenu = () => setMenu('menu-hidden')
     const openMenu = () => setMenu('menu-active')
@@ -38,7 +39,7 @@ const Navigation = () => {
                     <div className="cart" style={menu === 'menu-hidden' ? { display: 'block' } : { display: 'none' }}>
                         <Link to="/cart">
                             <span className="number">
-                                {cart.length}
+                                {cartProducts.length}
                             </span>
                             <span className="icon icon-cart"></span>
                         </Link>

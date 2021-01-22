@@ -2,12 +2,14 @@
     position: relative;
 }
 
-.banner .banner-img{
+.banner img{
     width: 100%;
-    margin-top: 114px !important;
+    margin-top: 100px !important;
     max-height: 684px;
     border-radius: 4px;
 }
+
+
 
 .banner .box-container{
     background-color: rgba(255, 255, 255, .6);

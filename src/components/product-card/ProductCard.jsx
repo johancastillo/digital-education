@@ -1,5 +1,6 @@
 import "./ProductCard.css"
 import { Link } from 'react-router-dom'
+import BtnPrice from "../btn-price/BtnPrice"
 
 const starsValidator = {
     0: { 1: "icon-star-void", 2: "icon-star-void", 3: "icon-star-void", 4: "icon-star-void", 5: "icon-star-void" },
@@ -62,13 +63,12 @@ const ProductCard = ({ courseID, title, image, stars, type, price, teacher, teac
                     </div>
 
                     <div className="price">
-                        <span className="icon-cart"></span>
-                        
+
                         {
                             price === 'free' ? 
                             <span className="price" style={{color: 'red', marginLeft: '8px'}}>¡Gratis!</span> 
                             : 
-                            <span className="price" style={{marginLeft: '8px'}}>{`$${price} USD`} </span> 
+                            <BtnPrice price={price} courseID={courseID} />
                         }
 
                     </div>

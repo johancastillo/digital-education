@@ -1,7 +1,10 @@
 import React from 'react'
-import banner from './banner.png'
 import "./Banner.css"
 import AppContext from '../../context/AppContext'
+// Banners Image
+import banner from './banner.png'
+import banner2 from './banner2.jpg'
+
 
 const Banner = () => {
     const {filter, setFilter, searching, setSearching} = React.useContext(AppContext)
@@ -18,7 +21,8 @@ const Banner = () => {
 
     return (
         <div className="banner">
-            <img className="banner-img" src={banner} alt="" />
+            <img className="d-none d-md-block banner-desktop" src={banner2} alt="" />
+            <img className="d-block d-md-none" src={banner} alt="" />
 
             <div className="box-container">
                 <form className="form">
