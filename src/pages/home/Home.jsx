@@ -1,14 +1,17 @@
-import {useState} from 'react'
+import React, { useState } from 'react'
 import Banner from "../../components/banner/Banner"
 import CategoriesSection from "../../components/categories-section/CategoriesSection"
 import ProductCard from "../../components/product-card/ProductCard"
 import "./Home.css"
 // Data
 import data from '../../data.json'
+import AppContext from '../../context/AppContext'
 
 
 const Home = () => {
     const [courses, setCourses] = useState(data)
+
+    const { filter, setFilter, searching, setSearching } = React.useContext(AppContext)
 
     return (
         <div className="home">
@@ -16,20 +19,44 @@ const Home = () => {
 
             <div className="gallery">
                 {
-                    courses.map(course => {
-                        return(
-                        <ProductCard
-                            courseID={course.id}
-                            image={course.image}
-                            title={course.title}
-                            stars={course.stars}
-                            type={course.type}
-                            price={course.price}
-                            teacher={course.teacher}
-                            teacherImg={course.teacherImg}
-                            description={course.description}
-                        />)
-                    })
+
+                    filter ?
+                        courses.map(course => {
+                            const wordSearching = searching.toLowerCase()
+                            const titleSearching = course.title.toLowerCase()
+                            const validation = titleSearching.includes(wordSearching)
+
+                            if(validation){
+                                return (
+                                    <ProductCard
+                                        courseID={course.id}
+                                        image={course.image}
+                                        title={course.title}
+                                        stars={course.stars}
+                                        type={course.type}
+                                        price={course.price}
+                                        teacher={course.teacher}
+                                        teacherImg={course.teacherImg}
+                                        description={course.description}
+                                    />
+                                )
+                            }
+                        })
+                        :
+                        courses.map(course => {
+                            return (
+                                <ProductCard
+                                    courseID={course.id}
+                                    image={course.image}
+                                    title={course.title}
+                                    stars={course.stars}
+                                    type={course.type}
+                                    price={course.price}
+                                    teacher={course.teacher}
+                                    teacherImg={course.teacherImg}
+                                    description={course.description}
+                                />)
+                        })
                 }
 
 

@@ -12,7 +12,6 @@ import Course from './pages/course/Course'
 import Cart from './pages/cart/Cart'
 import Favorites from './pages/favorites/Favorites'
 import AppProvider from './context/AppProvider'
-import Consumer from './Consumer'
 
 
 const App = () => {
@@ -20,7 +19,6 @@ const App = () => {
     <AppProvider>
       <Router>
         <Navigation />
-        <Consumer />
 
         <Switch>
           <Route exact path="/" component={Home} />

@@ -1,13 +1,19 @@
-import {useState} from 'react'
+import React from 'react'
 import banner from './banner.webp'
 import "./Banner.css"
+import AppContext from '../../context/AppContext'
 
 const Banner = () => {
-    const [search, setSearch] = useState('')
-    console.log(search)
+    const {filter, setFilter, searching, setSearching} = React.useContext(AppContext)
 
-    const handleChange = e => {
-        setSearch(e.target.value)
+    const handleSearch = e => {
+        if(e.target.value){
+            setFilter(true)
+        } else{
+            setFilter(false)
+        }
+
+        setSearching(e.target.value)
     }
 
     return (
@@ -24,7 +30,7 @@ const Banner = () => {
                     </p>
 
                     <div class="mb-3">
-                        <input type="text" onChange={handleChange} placeholder="¿Qué quieres aprender?" className="form-control" />
+                        <input type="text" onChange={handleSearch} placeholder="¿Qué quieres aprender?" className="form-control" />
                     </div>
 
                 </form>
