@@ -1,5 +1,5 @@
 import React from 'react'
-import banner from './banner.webp'
+import banner from './banner.png'
 import "./Banner.css"
 import AppContext from '../../context/AppContext'
 

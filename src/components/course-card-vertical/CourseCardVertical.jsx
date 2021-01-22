@@ -5,7 +5,7 @@ const CourseCardVertical = ({image, title, description}) => {
             <div class="row g-0">
                 
                 <div class="col-md-6">
-                    <img src={image} alt="" />
+                    <img src={image} alt={title} style={{width: '100%'}} />
                 </div>
 
                 <div class="col-md-6">
