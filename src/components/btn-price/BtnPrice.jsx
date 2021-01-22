@@ -6,7 +6,10 @@ const BtnPrice = ({price, courseID}) => {
     const {cartProducts, setCartProducts} = useContext(AppContext)
     
     const handleClick = e => {
-        setCartProducts(cartProducts.push(courseID))
+        let newArray = cartProducts
+        newArray.push(courseID)
+
+        setCartProducts(newArray)
         console.log(cartProducts)
     }
     

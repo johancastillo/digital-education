@@ -8,7 +8,7 @@ import AppContext from '../../context/AppContext'
 
 const Navigation = () => {
     const [menu, setMenu] = useState('menu-hidden')
-    const {cartProducts} = useContext(AppContext)
+    const {cartProducts, setCartProducts} = useContext(AppContext)
 
     const closeMenu = () => setMenu('menu-hidden')
     const openMenu = () => setMenu('menu-active')
