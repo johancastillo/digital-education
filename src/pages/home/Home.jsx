@@ -41,7 +41,12 @@ const Home = () => {
                                         description={course.description}
                                     />
                                 )
-                            }
+                            }else{
+                                <h1 className="text-center">
+                                    No se hay resultados de {`"${wordSearching}"`}
+                                </h1>
+                                
+                            } 
                         })
                         :
                         courses.map(course => {

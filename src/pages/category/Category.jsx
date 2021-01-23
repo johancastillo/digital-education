@@ -44,6 +44,12 @@ const Category = () => {
                                     <CourseCardVertical 
                                         image={course.image}
                                         title={course.title}
+                                        stars={course.stars}
+                                        type={course.type}
+                                        teacher={course.teacher}
+                                        teacherImg={course.teacherImg}
+                                        courseID={course.id}
+                                        price={course.price}
                                     />
                                 )
                             })
