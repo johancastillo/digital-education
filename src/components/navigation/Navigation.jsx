@@ -1,14 +1,13 @@
-import {useContext, useState } from 'react'
+import { useContext } from 'react'
 import "./Navigation.css"
 import logo from './logo.svg'
 import { Link } from 'react-router-dom'
 import AppContext from '../../context/AppContext'
-import NavIcons from '../nav-icons/NavIcons'
 
 
 
-const Navigation = ({cartNum}) => {
-    const {cartProducts, menu, setMenu} = useContext(AppContext)
+const Navigation = () => {
+    const { menu, cartProducts, setMenu } = useContext(AppContext)
 
     const closeMenu = () => setMenu('menu-hidden')
     const openMenu = () => setMenu('menu-active')
@@ -21,17 +20,34 @@ const Navigation = ({cartNum}) => {
                     <span className="icon-menu" onClick={openMenu}></span>
                     <img src={logo} alt="logo" />
 
-                    <span className="logo-text">Digital Education</span>
+                    <span className="logo-text">
+                        Digital Education
+                    </span>
                 </div>
 
                 <div className="box-search" style={{ display: 'none' }}>
                     <input type="text" placeholder="Buscar..." />
                 </div>
 
-                <NavIcons 
-                    cartNum={cartNum} 
-                    menu={menu}
-                />
+                <div className="box-icons">
+
+                    <span className="icon icon-search" style={menu === 'menu-hidden' ? { display: 'block' } : { display: 'none' }}></span>
+
+                    <Link to="/favorites">
+                        <span className="icon icon-bookmark-void" style={menu === 'menu-hidden' ? { display: 'block' } : { display: 'none' }}></span>
+                    </Link>
+
+                    <div className="cart">
+                        <Link to="/cart">
+                            <span className="number">
+                                {cartProducts.length}
+                            </span>
+                            <span className="icon icon-cart"></span>
+                        </Link>
+                    </div>
+
+                </div>
+
             </header>
 
             <nav className={`menu ${menu}`}>

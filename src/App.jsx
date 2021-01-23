@@ -11,17 +11,16 @@ import Navigation from './components/navigation/Navigation'
 import Course from './pages/course/Course'
 import Cart from './pages/cart/Cart'
 import Favorites from './pages/favorites/Favorites'
-import { useContext } from 'react'
-import AppContext from './context/AppContext'
+import ToUp from './components/to-up/ToUp'
 
 
 const App = () => {
-  const {cartProducts} = useContext(AppContext)
 
   return (
     
       <Router>
-        <Navigation cartNum={cartProducts} />
+        <Navigation />
+        <ToUp />
 
         <Switch>
           <Route exact path="/" component={Home} />
