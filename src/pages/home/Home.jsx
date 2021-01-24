@@ -1,17 +1,28 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Banner from "../../components/banner/Banner"
 import CategoriesSection from "../../components/categories-section/CategoriesSection"
 import ProductCard from "../../components/product-card/ProductCard"
 import "./Home.css"
-// Data
-import data from '../../data.json'
 import AppContext from '../../context/AppContext'
+
+//Axios
+import axios from 'axios'
 
 
 const Home = () => {
-    const [courses] = useState(data)
+    const [courses, setCourses] = useState([])
 
     const { filter, searching} = React.useContext(AppContext)
+
+    useEffect(() => {
+        axios.get('https://johancastillo.github.io/json-api-fake/digital-education/courses.json')
+        .then(
+            response => setCourses(response.data)
+        )
+        .catch(
+            error => console.log(error)
+        )
+    }, [])
 
     return (
         <div className="home">
