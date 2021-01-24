@@ -9,8 +9,11 @@ import './About.css'
 const About = () => {
     return (
         <div className="about">
-            <h3 className="text-center">Aplicación desarrollada por:</h3>
-            <div className="section team-dev">
+            <h3 className="text-center">
+                Team
+            </h3>
+            
+            <div className="section team-grid">
                 <UserCard
                     name="Johan Castillo"
                     role=""
@@ -24,10 +27,6 @@ const About = () => {
                     role="Web Developer"
                 />
 
-            </div>
-
-            <h3 className="text-center">Equipo</h3>
-            <div className="section team">
                 <UserCard
                     name="Celmira Rojas"
                     image={famale}
@@ -39,7 +38,15 @@ const About = () => {
                     image={male}
                     role="SEO Manager"
                 />
+
+                <UserCard
+                    name="Yariana Ramos"
+                    image={famale}
+                    role="Diseñadora Gráfica"
+                />
+
             </div>
+
         </div>
     )
 }

@@ -2,15 +2,26 @@
     margin-top: 114px;
 }
 
-.team-dev{
+.team-grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
 }
 
-.team{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+@media screen and (max-width: 641px){
+    .team-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
+@media screen and (max-width: 530px){
+    .team-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 373px){
+    .team-grid{
+        grid-template-columns: 1fr;
+    }
+}
