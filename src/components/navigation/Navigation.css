@@ -81,6 +81,7 @@
 .menu{
     padding: 20px;
     width: 45%;
+    max-width: 290px;
     position: fixed;
     top: 0;
     background: #fff;

@@ -1,5 +1,6 @@
 import "./Filter.css"
 
+
 const Filter = () => {
     return (
         <div class="accordion" id="accordionExample" style={{ marginBottom: '20px' }}>
@@ -226,6 +227,21 @@ const Filter = () => {
             </div>
 
             <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#teacher-filter" aria-expanded="true" aria-controls="collapseOne">
+                        Fecha de lanzamiento
+                    </button>
+                </h2>
+
+                <div id="teacher-filter" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <input type="date" placeholder="Nombre del profesor" className="form-control" />
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         Etiquetas
@@ -263,6 +279,41 @@ const Filter = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#category-filter" aria-expanded="true" aria-controls="collapseOne">
+                        Nivel
+                    </button>
+                </h2>
+
+                <div id="category-filter" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                            <label class="form-check-label" for="defaultCheck1">
+                                Básico
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
+                            <label class="form-check-label" for="defaultCheck2">
+                                Intermedio
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
+                            <label class="form-check-label" for="defaultCheck2">
+                                Avanzado
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
 
             <div class="accordion-item">

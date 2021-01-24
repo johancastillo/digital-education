@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 import AppContext from '../../context/AppContext'
 
 
-
 const Navigation = () => {
     const { menu, cartProducts, setMenu } = useContext(AppContext)
 
@@ -31,10 +30,10 @@ const Navigation = () => {
 
                 <div className="box-icons">
 
-                    <span className="icon icon-search" style={menu === 'menu-hidden' ? { display: 'block' } : { display: 'none' }}></span>
+                    <span className="icon icon-search"></span>
 
                     <Link to="/favorites">
-                        <span className="icon icon-bookmark-void" style={menu === 'menu-hidden' ? { display: 'block' } : { display: 'none' }}></span>
+                        <span className="icon icon-bookmark-void"></span>
                     </Link>
 
                     <div className="cart">
@@ -51,30 +50,33 @@ const Navigation = () => {
             </header>
 
             <nav className={`menu ${menu}`}>
-                <div>
-                    <span className="icon icon-x" onClick={closeMenu}></span>
+                <div className="d-flex justify-content-between">
+
+                    <ul>
+                        <li>
+                            <Link to="/">
+                                <span className="icon-home"></span>
+                                <span>Inicio</span>
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link to="/about">¿Quienes somos?</Link>
+                        </li>
+
+                        <li>
+                            <Link to="/category">Categoría</Link>
+                        </li>
+
+                        <li>
+                            <Link to="/single-product">Producto</Link>
+                        </li>
+                    </ul>
+
+                    <div>
+                        <span className="icon icon-x" onClick={closeMenu}></span>
+                    </div>
                 </div>
-
-                <ul>
-                    <li>
-                        <Link to="/">
-                            <span className="icon-home"></span>
-                            <span>Inicio</span>
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link to="/about">¿Quienes somos?</Link>
-                    </li>
-
-                    <li>
-                        <Link to="/category">Categoría</Link>
-                    </li>
-
-                    <li>
-                        <Link to="/single-product">Producto</Link>
-                    </li>
-                </ul>
 
                 <div className="d-flex ">
                     <span className="icon icon-log-in"></span>
