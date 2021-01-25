@@ -77,7 +77,7 @@ const ProductCard = ({ courseID, title, image, stars, type, price, teacher, teac
                 <div className="card-footer px-0">
                     <div className="teacher">
                         <img className="teacher-img" src={teacherImg} alt={teacher} />
-                        <span style={{ marginLeft: '5px' }}>{teacher}</span>
+                        <span className="d-none d-sm-block" style={{ marginLeft: '5px' }}>{teacher}</span>
                     </div>
 
                     <div className="price">
