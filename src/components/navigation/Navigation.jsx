@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import "./Navigation.css"
 import logo from './logo.svg'
 import { Link } from 'react-router-dom'
@@ -6,7 +6,8 @@ import AppContext from '../../context/AppContext'
 
 
 const Navigation = () => {
-    const { menu, cartProducts, setMenu } = useContext(AppContext)
+    const [menu, setMenu] = useState('menu-hidden')
+    const {cartProducts} = useContext(AppContext)
 
     const closeMenu = () => setMenu('menu-hidden')
     const openMenu = () => setMenu('menu-active')
@@ -15,14 +16,19 @@ const Navigation = () => {
     return (
         <>
             <header className="navigation">
-                <div className="box-logo">
-                    <span className="icon-menu" onClick={openMenu}></span>
-                    <img src={logo} alt="logo" />
 
-                    <span className="logo-text">
-                        Digital Education
+                <div className="box-logo">
+                    <span className="icon-menu" style={{cursor: 'pointer'}} onClick={openMenu}></span>
+
+                    <Link to="/">
+                        <img src={logo} alt="logo" />
+
+                        <span className="logo-text">
+                            Digital Education
                     </span>
+                    </Link>
                 </div>
+
 
                 <div className="box-search" style={{ display: 'none' }}>
                     <input type="text" placeholder="Buscar..." />
@@ -49,7 +55,7 @@ const Navigation = () => {
 
             </header>
 
-            <nav className={`menu ${menu}`}>
+            <nav className={`menu ${menu}`} onClick={closeMenu}>
                 <div className="d-flex justify-content-between">
 
                     <ul>
@@ -74,7 +80,7 @@ const Navigation = () => {
                     </ul>
 
                     <div>
-                        <span className="icon icon-x" onClick={closeMenu}></span>
+                        <span className="icon icon-x" style={{cursor: 'pointer'}} onClick={closeMenu}></span>
                     </div>
                 </div>
 

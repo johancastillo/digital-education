@@ -5,11 +5,11 @@ const AppProvider = ({children}) => {
 	const [filter, setFilter] = useState(false)
 	const [searching, setSearching] = useState('')
 	const [cartProducts, setCartProducts] = useState([])
-	const [menu, setMenu] = useState('menu-hidden')
 	const [loading, setLoading] = useState(true)
+	const [favoritesList, setFavoritesList] = useState([])
 
 	return (
-		<AppContext.Provider value={{ loading, setLoading, filter, setFilter, searching, setSearching, cartProducts, setCartProducts, menu, setMenu }}>
+		<AppContext.Provider value={{ favoritesList, setFavoritesList, cartProducts, setCartProducts, loading, setLoading, filter, setFilter, searching, setSearching }}>
 			{children}
 		</AppContext.Provider>
 	);

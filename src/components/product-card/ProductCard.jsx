@@ -2,11 +2,47 @@ import "./ProductCard.css"
 import { Link } from 'react-router-dom'
 import BtnPrice from "../btn-price/BtnPrice"
 import Stars from "../stars/Stars"
+import { useContext, useState } from "react"
+import AppContext from "../../context/AppContext"
 
 
 
 
 const ProductCard = ({ courseID, title, image, stars, type, price, teacher, teacherImg, description }) => {
+    const { favoritesList, setFavoritesList } = useContext(AppContext)
+    const [favorite, setFavorite] = useState(favoritesList.includes(courseID))
+
+    const addedFovorite = () => {
+        const exists = favoritesList.includes(courseID)
+
+        if (!exists) {
+            setFavorite(!favorite)
+            const newArray = favoritesList
+            newArray.push(courseID)
+            setFavoritesList(newArray)
+
+            console.log(newArray)
+        }else{
+            setFavorite(!favorite)
+            const newArray = favoritesList
+            // Function for remove item of array
+            const removeItemFromArr = ( arr, item ) => {
+                var i = arr.indexOf( item );
+             
+                if ( i !== -1 ) {
+                    arr.splice( i, 1 );
+                }
+            }
+
+            removeItemFromArr(newArray, courseID)
+            setFavoritesList(newArray)
+
+            console.log(newArray)
+        }
+
+
+    }
+
     return (
         <div className="card" style={{ width: '100%' }}>
             <Link to="/cursos/html/1-1">
@@ -24,7 +60,9 @@ const ProductCard = ({ courseID, title, image, stars, type, price, teacher, teac
                     </div>
 
                     <div>
-                        <span className="icon-bookmark-void" style={{ fontSize: "22px" }}></span>
+                        <span className={favorite ? "icon-bookmark-full" : "icon-bookmark-void"}
+                            style={{ fontSize: "22px", cursor: 'pointer' }}
+                            onClick={addedFovorite}></span>
                     </div>
                 </div>
 
@@ -38,17 +76,17 @@ const ProductCard = ({ courseID, title, image, stars, type, price, teacher, teac
 
                 <div className="card-footer px-0">
                     <div className="teacher">
-                        <img className="teacher-img" src={teacherImg} alt="" />
+                        <img className="teacher-img" src={teacherImg} alt={teacher} />
                         <span style={{ marginLeft: '5px' }}>{teacher}</span>
                     </div>
 
                     <div className="price">
 
                         {
-                            price === 'free' ? 
-                            <span className="price" style={{color: 'red', marginLeft: '8px'}}>¡Gratis!</span> 
-                            : 
-                            <BtnPrice price={price} courseID={courseID} />
+                            price === 'free' ?
+                                <span className="price" style={{ color: 'red', marginLeft: '8px' }}>¡Gratis!</span>
+                                :
+                                <BtnPrice price={price} courseID={courseID} />
                         }
 
                     </div>

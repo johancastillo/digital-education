@@ -1,0 +1,11 @@
+.favorite-page{
+    margin-top: 114px;
+}
+
+.grid-favorites{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12px;
+
+    padding: 20px;
+}
