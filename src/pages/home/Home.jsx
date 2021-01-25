@@ -7,37 +7,66 @@ import AppContext from '../../context/AppContext'
 
 //Axios
 import axios from 'axios'
+import Loading from '../../components/loading/Loading'
 
 
 const Home = () => {
+    // State of courses list
     const [courses, setCourses] = useState([])
 
-    const { filter, searching} = React.useContext(AppContext)
+    // State of filter courses for title
+    const { filter, searching, loading, setLoading } = React.useContext(AppContext)
 
+    // Get data with Axios
     useEffect(() => {
         axios.get('https://johancastillo.github.io/json-api-fake/digital-education/courses.json')
-        .then(
-            response => setCourses(response.data)
-        )
-        .catch(
-            error => console.log(error)
-        )
+            .then(
+                response => setCourses(response.data),
+                setLoading(false)
+            )
+            .catch(error => console.log(error))
     }, [])
 
+    // Rendering component
     return (
-        <div className="home">
-            <Banner />
+        <>
+            <Loading loading={loading} />
+            <div className="home">
+                <Banner />
 
-            <div className="gallery">
-                {
+                <div className="gallery">
+                    {
+                        // Rendering courses list
+                        filter ?
+                            courses.map(course => {
+                                const wordSearching = searching.toLowerCase()
+                                const titleSearching = course.title.toLowerCase()
+                                const validation = titleSearching.includes(wordSearching)
 
-                    filter ?
-                        courses.map(course => {
-                            const wordSearching = searching.toLowerCase()
-                            const titleSearching = course.title.toLowerCase()
-                            const validation = titleSearching.includes(wordSearching)
+                                if (validation) {
+                                    return (
+                                        <ProductCard
+                                            key={course.courseID}
+                                            courseID={course.id}
+                                            image={course.image}
+                                            title={course.title}
+                                            stars={course.stars}
+                                            type={course.type}
+                                            price={course.price}
+                                            teacher={course.teacher}
+                                            teacherImg={course.teacherImg}
+                                            description={course.description}
+                                        />
+                                    )
+                                } else {
+                                    <h1 className="text-center">
+                                        No se hay resultados de {`"${wordSearching}"`}
+                                    </h1>
 
-                            if(validation){
+                                }
+                            })
+                            :
+                            courses.map(course => {
                                 return (
                                     <ProductCard
                                         key={course.courseID}
@@ -50,41 +79,20 @@ const Home = () => {
                                         teacher={course.teacher}
                                         teacherImg={course.teacherImg}
                                         description={course.description}
-                                    />
-                                )
-                            }else{
-                                <h1 className="text-center">
-                                    No se hay resultados de {`"${wordSearching}"`}
-                                </h1>
-                                
-                            } 
-                        })
-                        :
-                        courses.map(course => {
-                            return (
-                                <ProductCard
-                                    key={course.courseID}
-                                    courseID={course.id}
-                                    image={course.image}
-                                    title={course.title}
-                                    stars={course.stars}
-                                    type={course.type}
-                                    price={course.price}
-                                    teacher={course.teacher}
-                                    teacherImg={course.teacherImg}
-                                    description={course.description}
-                                />)
-                        })
-                }
+                                    />)
+                            })
+                    }
 
 
 
 
+                </div>
+
+                <CategoriesSection />
             </div>
-
-            <CategoriesSection />
-        </div>
+        </>
     )
 }
+
 
 export default Home

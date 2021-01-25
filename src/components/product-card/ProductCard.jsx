@@ -8,7 +8,7 @@ import Stars from "../stars/Stars"
 
 const ProductCard = ({ courseID, title, image, stars, type, price, teacher, teacherImg, description }) => {
     return (
-        <div className="card" style={{ width: '100%' }} key={courseID}>
+        <div className="card" style={{ width: '100%' }}>
             <Link to="/cursos/html/1-1">
                 <img src={image} className="card-img-top" alt="..." />
             </Link>
@@ -17,7 +17,7 @@ const ProductCard = ({ courseID, title, image, stars, type, price, teacher, teac
 
                 <div className="d-flex justify-content-between">
                     <div className="d-flex">
-                        {/* Stars */}
+                        {/* Stars rendering component */}
                         <Stars stars={stars} />
 
                         <span style={{ marginLeft: "10px" }}> {stars} </span>
