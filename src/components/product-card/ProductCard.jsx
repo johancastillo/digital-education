@@ -22,15 +22,15 @@ const ProductCard = ({ courseID, title, image, stars, type, price, teacher, teac
             setFavoritesList(newArray)
 
             console.log(newArray)
-        }else{
+        } else {
             setFavorite(!favorite)
             const newArray = favoritesList
             // Function for remove item of array
-            const removeItemFromArr = ( arr, item ) => {
-                var i = arr.indexOf( item );
-             
-                if ( i !== -1 ) {
-                    arr.splice( i, 1 );
+            const removeItemFromArr = (arr, item) => {
+                var i = arr.indexOf(item);
+
+                if (i !== -1) {
+                    arr.splice(i, 1);
                 }
             }
 
@@ -45,11 +45,14 @@ const ProductCard = ({ courseID, title, image, stars, type, price, teacher, teac
 
     return (
         <div className="card" style={{ width: '100%' }}>
-            <Link to="/cursos/html/1-1">
+            <Link to="/curso">
                 <img src={image} className="card-img-top" alt="..." />
             </Link>
+
             <div className="card-body">
-                <h5 className="card-title">{title}</h5>
+                <Link to="/curso">
+                    <h5 className="card-title">{title}</h5>
+                </Link>
 
                 <div className="d-flex justify-content-between">
                     <div className="d-flex">
@@ -84,7 +87,7 @@ const ProductCard = ({ courseID, title, image, stars, type, price, teacher, teac
 
                         {
                             price === 'free' ?
-                                <span className="price" style={{ color: 'red', marginLeft: '8px' }}>¡Gratis!</span>
+                                <Link to="/curso"><span className="price" style={{ color: 'red', marginLeft: '8px' }}>¡Gratis!</span></Link>
                                 :
                                 <BtnPrice price={price} courseID={courseID} />
                         }

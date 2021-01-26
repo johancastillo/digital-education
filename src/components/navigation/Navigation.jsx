@@ -25,7 +25,7 @@ const Navigation = () => {
 
                         <span className="logo-text">
                             Digital Education
-                    </span>
+                        </span>
                     </Link>
                 </div>
 
@@ -86,7 +86,9 @@ const Navigation = () => {
 
                 <div className="d-flex ">
                     <span className="icon icon-log-in"></span>
-                    <p style={{ marginLeft: '10px' }}>Cerrar sesión</p>
+                    <p style={{ marginLeft: '10px' }}>
+                        Cerrar sesión
+                    </p>
                 </div>
             </nav>
         </>

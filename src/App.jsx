@@ -12,6 +12,7 @@ import Course from './pages/course/Course'
 import Cart from './pages/cart/Cart'
 import Favorites from './pages/favorites/Favorites'
 import ToUp from './components/to-up/ToUp'
+import CourseDetails from './pages/course-details/CourseDetails'
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
           <Route exact path="/single-product" component={SingleProduct} />
           <Route exact path="/admin" component={Admin} />
           <Route exact path="/cursos/html/1-1" component={Course} />
+          <Route exact path="/curso" component={CourseDetails} />
           <Route exact path="/cart" component={Cart} />
           <Route exact path="/favorites" component={Favorites} />
 
