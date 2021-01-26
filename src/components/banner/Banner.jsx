@@ -26,11 +26,12 @@ const Banner = () => {
 
             <div className="box-container">
                 <form className="form">
-                    <h3>Transforma tus sueños y hazlo realidad</h3>
+                    <h3>
+                        ¡Adquiere los conocimientos que necesitas para lograr tus sueños!
+                    </h3>
 
                     <p className="mt-4">
-                        Mejora como profesional y adquiere los conocimientos que
-                        necesitas para lograr tus metas.
+                        Aprende, fórmate y mejora como profesional con conocimientos en herramientas digitales gracias a las clases con el contenido más actualizado en distintas áreas.
                     </p>
 
                     <div className="mb-3">
