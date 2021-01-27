@@ -5,26 +5,24 @@ import AppContext from "../../context/AppContext"
 import axios from 'axios'
 
 const Cart = () => {
-    const { cartProducts, setLoading } = useContext(AppContext)
+    const { cartProducts } = useContext(AppContext)
     const [courses, setCourses] = useState([])
-    const [total, setTotal] = useState(0)
+    
 
     // Get data with Axios
     useEffect(() => {
-        setLoading(true)
         axios.get('https://johancastillo.github.io/json-api-fake/digital-education/courses.json')
             .then(
                 // Obteniendo los cursos
-                response => setCourses(response.data),
-                // Cambiando el estado del componente Loading a false
-                setLoading(false)
+                response => setCourses(response.data)
             )
             .catch(error => console.log(error))
         }, [])
         
-        let totalPrice = total
+        let totalPrice = 0
+
     return (
-        <div className="cart-page px-4" >
+        <div className="cart-page px-4">
             <h1 className="text-center"> Carrito de compras </h1>
             <p className="text-center">
                 {

@@ -5,7 +5,7 @@ import CourseCardVertical from "../../components/course-card-vertical/CourseCard
 import Filter from "../../components/filter/Filter"
 
 const Category = () => {
-    const [courses, setCourses] = useState(data)
+    const [courses] = useState(data)
 
     return (
         <div className="category">

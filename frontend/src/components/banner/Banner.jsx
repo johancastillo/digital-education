@@ -2,8 +2,8 @@ import React from 'react'
 import "./Banner.css"
 import AppContext from '../../context/AppContext'
 // Banners Image
-import banner from './banner.png'
-import banner2 from './banner2.jpg'
+import banner from './banner.webp'
+import banner2 from './banner2.webp'
 
 
 const Banner = () => {
