@@ -1,0 +1,29 @@
+.favorite-page{
+    margin-top: 114px;
+}
+
+.grid-favorites{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12px;
+
+    padding: 20px;
+}
+
+@media screen and (min-width: 1400px){
+    .grid-favorites{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 743px){
+    .grid-favorites{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 645px){
+    .grid-favorites{
+        grid-template-columns: 1fr;
+    }
+}
