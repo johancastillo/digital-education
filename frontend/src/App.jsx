@@ -13,6 +13,7 @@ import Cart from './pages/cart/Cart'
 import Favorites from './pages/favorites/Favorites'
 import ToUp from './components/to-up/ToUp'
 import CourseDetails from './pages/course-details/CourseDetails'
+import BlogHome from './blog/blog-home/BlogHome'
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
 
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/blog" component={BlogHome} />
           <Route exact path="/about" component={About} />
           <Route exact path="/development" component={Category} />
           <Route exact path="/single-product" component={SingleProduct} />

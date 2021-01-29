@@ -1,3 +1,19 @@
 .blog-home{
     margin-top: 114px;
 }
+
+.container-custom{
+    position: relative;
+}
+
+.post-primary{
+    position: absolute;
+    width: 100%;
+    bottom: -100px;
+}
+
+@media screen and (max-width: 772px){
+    .post-primary{
+        position: static;
+    }
+}

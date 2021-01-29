@@ -77,6 +77,10 @@ const Navigation = () => {
                         <li>
                             <Link to="/single-product">Producto</Link>
                         </li>
+
+                        <li>
+                            <Link to="/blog">Nuestro blog</Link>
+                        </li>
                     </ul>
 
                     <div>
