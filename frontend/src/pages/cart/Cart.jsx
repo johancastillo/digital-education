@@ -3,7 +3,7 @@ import "./Cart.css"
 import { useContext, useEffect, useState } from "react"
 import AppContext from "../../context/AppContext"
 import axios from 'axios'
-import botonComprar from "../../components/boton-Comprar/boton-Comprar"
+import BotonComprar from "../../components/boton-comprar/BotonComprar"
 
 
 const Cart = () => {
@@ -60,7 +60,7 @@ const Cart = () => {
 
             <div>
                 {
-                    totalPrice > 0 ? <botonComprar/> : ""
+                    totalPrice > 0 ? <BotonComprar /> : ""
                 }
 
             </div>
