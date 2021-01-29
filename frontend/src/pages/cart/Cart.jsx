@@ -3,6 +3,8 @@ import "./Cart.css"
 import { useContext, useEffect, useState } from "react"
 import AppContext from "../../context/AppContext"
 import axios from 'axios'
+import botonComprar from "../../components/boton-Comprar/boton-Comprar"
+
 
 const Cart = () => {
     const { cartProducts } = useContext(AppContext)
@@ -56,15 +58,28 @@ const Cart = () => {
                 }
             </h4>
 
+            <div>
+                {
+                    totalPrice > 0 ? <botonComprar/> : ""
+                }
+
+            </div>
             
+
+           
         </div>
+
+
 
     )
 
 
+   
 
 
 }
+
+
 
 export default Cart
 
