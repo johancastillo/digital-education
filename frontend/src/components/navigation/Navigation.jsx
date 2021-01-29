@@ -81,6 +81,10 @@ const Navigation = () => {
                         <li>
                             <Link to="/blog">Nuestro blog</Link>
                         </li>
+
+                        <li>
+                            <Link to="/teachers">Profesores</Link>
+                        </li>
                     </ul>
 
                     <div>

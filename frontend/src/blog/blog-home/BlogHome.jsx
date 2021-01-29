@@ -35,7 +35,7 @@ const BlogHome = () => {
                 </div>
             </div>
 
-            <div className="container-fluid">
+            <div className="container" style={{marginTop: '152px'}}>
                 <div className="row">
                     <div className="col-md-6">
                         <img src={post1} alt="" width="100%" height="100%" />
