@@ -19,6 +19,7 @@ import Works from './pages/works/Works'
 import TeacherProfile from './pages/teacher-profile/TeacherProfile'
 import Categories from './pages/categories/Categories'
 import StudentProfile from './pages/student-profile/StudentProfile'
+import CreateCourse from './pages/create-course/CreateCourse'
 
 
 const App = () => {
@@ -39,8 +40,8 @@ const App = () => {
           <Route exact path="/trabajos" component={Works} />
           <Route exact path="/student-profile" component={StudentProfile} />
           <Route exact path="/development" component={Category} />
-          <Route exact path="/single-product" component={SingleProduct} />
           <Route exact path="/admin" component={Admin} />
+          <Route exact path="/admin/create-course" component={CreateCourse} />
           <Route exact path="/cursos/html/1-1" component={Course} />
           <Route exact path="/curso" component={CourseDetails} />
           <Route exact path="/cart" component={Cart} />
