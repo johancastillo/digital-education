@@ -8,6 +8,7 @@ import AppContext from '../../context/AppContext'
 //Axios
 import axios from 'axios'
 import Loading from '../../components/loading/Loading'
+import Footer from '../../components/footer/Footer'
 
 
 
@@ -117,6 +118,8 @@ const Home = () => {
 
                 <h2 className="m-4">Categorias principales</h2>
                 <CategoriesSection />
+
+                <Footer />
             </div>
         </>
     )

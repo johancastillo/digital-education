@@ -4,6 +4,7 @@
     background: #fff;
 
     position: fixed;
+    top: 0;
     z-index: 200;
 
     display: flex;

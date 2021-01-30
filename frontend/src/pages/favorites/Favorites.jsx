@@ -20,7 +20,8 @@ const Favorites = () => {
 
     return (
         <>
-            <Loading loading={loading} />
+            { loading ? <Loading /> : "" }
+
             <div className="favorite-page">
                 <h1 className="text-center">Lista de favoritos</h1>
                 <p className="text-center">
