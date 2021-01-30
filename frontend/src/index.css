@@ -2,6 +2,11 @@
     --color-one: #283b49;
 }
 
+.page{
+    margin-top: 114px;
+}
+
 .text-blue{
     color: blue;
 }
+

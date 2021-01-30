@@ -10,12 +10,26 @@ import axios from 'axios'
 import Loading from '../../components/loading/Loading'
 
 
+
 const Home = () => {
     // State of courses list
     const [courses, setCourses] = useState([])
 
     // State of filter courses for title
     const { filter, searching, loading, setLoading } = React.useContext(AppContext)
+
+    const { setFilter, setSearching } = React.useContext(AppContext)
+
+    const handleSearch = e => {
+        if (e.target.value) {
+            setFilter(true)
+        } else {
+            setFilter(false)
+        }
+
+        setSearching(e.target.value)
+    }
+
 
     // Get data with Axios
     useEffect(() => {
@@ -33,6 +47,16 @@ const Home = () => {
             <Loading loading={loading} />
             <div className="home">
                 <Banner />
+
+                <div className="mt-4 px-5 d-flex justify-content-between">
+                    <div>
+
+                    </div>
+
+                    <div>
+                        <input type="text" onChange={handleSearch} placeholder="Empieza a buscar..." className="form-control" />
+                    </div>
+                </div>
 
                 <div className="gallery">
                     {
