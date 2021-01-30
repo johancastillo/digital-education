@@ -57,7 +57,6 @@ const CourseDetails = () => {
                         </p>
 
                         <p>
-                        <span style={{marginRight: '10px', fontSize: '20px'}} className="icon-line-chart-down"></span>
                             <span style={{ marginRight: '10px', fontSize: '20px' }} className="icon-time"></span>
                             Duración: +8 horas (Ver temario)
                         </p>
