@@ -12,7 +12,7 @@ const TeacherProfile = () => {
                             lastname="Castillo"
                             image={teacher}
                             stars={4}
-                            description="Desarrollador Web Full-Stack"
+                            profesion="Profesor"
                             category="Desarrollo de Software"
                             country="Caracas, Venezuela"
                         />

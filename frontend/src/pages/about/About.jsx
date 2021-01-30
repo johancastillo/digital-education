@@ -12,7 +12,7 @@ const About = () => {
             <h3 className="text-center">
                 Team
             </h3>
-            
+
             <div className="section team-grid">
                 <UserCard
                     name="Johan Castillo"
@@ -25,6 +25,12 @@ const About = () => {
                     name="Euclides G."
                     image={male}
                     role="Web Developer"
+                />
+
+                <UserCard
+                    name="Keymar Pérez"
+                    image={famale}
+                    role="UI Designer"
                 />
 
                 <UserCard

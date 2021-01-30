@@ -1,0 +1,186 @@
+[
+    {
+        "id": 1,
+        "title": "Diseño",
+        "image": "",
+        "courses": 4,
+        "specialties": 1,
+        "ebooks": 2
+    },
+    {
+        "id": 2,
+        "title": "Desarrollo",
+        "image": "",
+        "courses": 4,
+        "specialties": 1,
+        "ebooks": 2
+    },
+    {
+        "id": 3,
+        "title": "Marketing",
+        "image": "",
+        "courses": 4,
+        "specialties": 1,
+        "ebooks": 2
+    },
+    {
+        "id": 4,
+        "title": "Informática y Software",
+        "image": "",
+        "courses": 4,
+        "specialties": 1,
+        "ebooks": 2
+    },
+    {
+        "id": 5,
+        "title": "Desarrollo Personal",
+        "image": "",
+        "courses": 4,
+        "specialties": 1,
+        "ebooks": 2
+    },
+    {
+        "id": 6,
+        "title": "Negocios",
+        "image": "",
+        "courses": 4,
+        "specialties": 1,
+        "ebooks": 2
+    },
+    {
+        "id": 7,
+        "title": "Fotografía",
+        "image": "",
+        "courses": 4,
+        "specialties": 1,
+        "ebooks": 2
+    },
+    {
+        "id": 8,
+        "title": "Música",
+        "image": "",
+        "courses": 4,
+        "specialties": 1,
+        "ebooks": 2
+    },
+    {
+        "id": 9,
+        "title": "Matemáticas",
+        "image": "",
+        "courses": 4,
+        "specialties": 1,
+        "ebooks": 2
+    },
+    {
+        "id": 10,
+        "title": "Física",
+        "image": "",
+        "courses": 4,
+        "specialties": 1,
+        "ebooks": 2
+    },
+    {
+        "id": 11,
+        "title": "Electrónica",
+        "image": "",
+        "courses": 4,
+        "specialties": 1,
+        "ebooks": 2
+    },
+    {
+        "id": 12,
+        "title": "Lengua y literatura",
+        "image": "",
+        "courses": 4,
+        "specialties": 1,
+        "ebooks": 2
+    },
+    {
+        "id": 13,
+        "title": "Química",
+        "image": "",
+        "courses": 4,
+        "specialties": 1,
+        "ebooks": 2
+    },
+    {
+        "id": 14,
+        "title": "Inglés",
+        "image": "",
+        "courses": 4,
+        "specialties": 1,
+        "ebooks": 2
+    },
+    {
+        "id": 15,
+        "title": "Geografía",
+        "image": "",
+        "courses": 4,
+        "specialties": 1,
+        "ebooks": 2
+    },
+    {
+        "id": 16,
+        "title": "Cocina",
+        "image": "",
+        "courses": 4,
+        "specialties": 1,
+        "ebooks": 2
+    },
+    {
+        "id": 17,
+        "title": "Educación para niños",
+        "image": "",
+        "courses": 4,
+        "specialties": 1,
+        "ebooks": 2
+    },
+    {
+        "id": 18,
+        "title": "Deportes",
+        "image": "",
+        "courses": 4,
+        "specialties": 1,
+        "ebooks": 2
+    },
+    {
+        "id": 19,
+        "title": "Finanzas",
+        "image": "",
+        "courses": 4,
+        "specialties": 1,
+        "ebooks": 2
+    },
+    {
+        "id": 20,
+        "title": "Dibujo",
+        "image": "",
+        "courses": 4,
+        "specialties": 1,
+        "ebooks": 2
+    },
+    {
+        "id": 21,
+        "title": "Arquitectura",
+        "image": "",
+        "courses": 4,
+        "specialties": 1,
+        "ebooks": 2
+    },
+    {
+        "id": 22,
+        "title": "Contabilidad",
+        "image": "",
+        "courses": 4,
+        "specialties": 1,
+        "ebooks": 2
+    },
+    {
+        "id": 23,
+        "title": "Economía",
+        "image": "",
+        "courses": 4,
+        "specialties": 1,
+        "ebooks": 2
+    }
+]

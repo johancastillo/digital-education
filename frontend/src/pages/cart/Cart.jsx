@@ -7,7 +7,7 @@ import PaymentMethod from "../../components/payment-method/PaymentMethod"
 
 
 const Cart = () => {
-    const { cartProducts } = useContext(AppContext)
+    const { cartProducts, setCartProducts } = useContext(AppContext)
     const [courses, setCourses] = useState([])
 
 
@@ -22,6 +22,9 @@ const Cart = () => {
     }, [])
 
     let totalPrice = 0
+
+    const deleteCourseAll = () => setCartProducts([])
+
 
     return (
         <div className="cart-page px-4">
@@ -48,6 +51,7 @@ const Cart = () => {
                                                 image={course.image}
                                                 price={course.price}
                                                 teacher={course.teacher}
+                                                courseID={course.id}
                                             />
                                         )
                                     }
@@ -60,7 +64,7 @@ const Cart = () => {
                             {
                                 totalPrice > 0 ?
                                 
-                                <div className="p-4" style={{ cursor: 'pointer' }}>
+                                <div className="p-4" style={{ cursor: 'pointer' }} onClick={deleteCourseAll}>
                                     <span className="icon-cart"></span>
                                     <span className="mx-2">Vaciar carrito</span>
                                 </div>

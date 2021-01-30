@@ -189,6 +189,7 @@ const CourseDetails = () => {
                             description="Desarrollador Web Full-Stack"
                             category="Desarrollo de Software"
                             stars={4}
+                            profesion="Profesor"
                         />
 
                         <br />
