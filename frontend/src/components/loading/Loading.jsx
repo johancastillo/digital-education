@@ -1,9 +1,8 @@
 import "./Loading.css"
 
-const Loading = ({loading}) => {
+const Loading = () => {
     return(
-        <div className="loader-section" 
-        style={loading ? {display: 'flex'} : {display: 'none'}}>
+        <div className="loader-section">
             <div className="lds-ring"><div></div><div></div><div></div><div></div></div>
             <span className="text-center">
                 Cargando...

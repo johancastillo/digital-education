@@ -71,11 +71,15 @@ const Navigation = () => {
                         </li>
 
                         <li>
+                            <Link to="/categorias">Categorías</Link>
+                        </li>
+
+                        <li>
                             <Link to="/development">Categoría</Link>
                         </li>
 
                         <li>
-                            <Link to="/single-product">Producto</Link>
+                            <Link to="/student-profile">Estudiante perfil</Link>
                         </li>
 
                         <li>

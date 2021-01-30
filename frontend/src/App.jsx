@@ -3,7 +3,7 @@ import About from './pages/about/About'
 import Category from './pages/category/Category'
 import Home from './pages/home/Home'
 import PageNotFound from './pages/page-not-found/PageNotFound'
-import SingleProduct from './pages/single-product/SingleProduct'
+import SingleProduct from './pages/student-profile/StudentProfile'
 import Admin from './pages/admin/Admin'
 
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -17,6 +17,8 @@ import BlogHome from './blog/blog-home/BlogHome'
 import Teachers from './pages/teachers/Teachers'
 import Works from './pages/works/Works'
 import TeacherProfile from './pages/teacher-profile/TeacherProfile'
+import Categories from './pages/categories/Categories'
+import StudentProfile from './pages/student-profile/StudentProfile'
 
 
 const App = () => {
@@ -32,8 +34,10 @@ const App = () => {
           <Route exact path="/blog" component={BlogHome} />
           <Route exact path="/teachers" component={Teachers} />
           <Route exact path="/teacher-profile" component={TeacherProfile} />
+          <Route exact path="/categorias" component={Categories} />
           <Route exact path="/about" component={About} />
           <Route exact path="/trabajos" component={Works} />
+          <Route exact path="/student-profile" component={StudentProfile} />
           <Route exact path="/development" component={Category} />
           <Route exact path="/single-product" component={SingleProduct} />
           <Route exact path="/admin" component={Admin} />

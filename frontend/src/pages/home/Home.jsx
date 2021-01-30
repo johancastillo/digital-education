@@ -44,7 +44,8 @@ const Home = () => {
     // Rendering component
     return (
         <>
-            <Loading loading={loading} />
+            
+            
             <div className="home">
                 <Banner />
 
@@ -57,6 +58,8 @@ const Home = () => {
                         <input type="text" onChange={handleSearch} placeholder="Empieza a buscar..." className="form-control" />
                     </div>
                 </div>
+                
+                { loading ? <Loading /> : "" }
 
                 <div className="gallery">
                     {
@@ -112,6 +115,7 @@ const Home = () => {
 
                 </div>
 
+                <h2 className="m-4">Categorias principales</h2>
                 <CategoriesSection />
             </div>
         </>

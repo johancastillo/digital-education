@@ -14,7 +14,6 @@ import category8 from './music.jpg'
 const CategoriesSection = () => {
     return (
         <div className="section">
-            <h2>Categorias principales</h2>
             <div className="categories">
                 
                 <CategoryCard
