@@ -11,7 +11,7 @@ import category7 from './photography.jpg'
 import category8 from './music.jpg'
 
 
-const CategoriesSection = () => {
+const CategoriesSection = ({data}) => {
     return (
         <div className="section">
             <div className="categories">

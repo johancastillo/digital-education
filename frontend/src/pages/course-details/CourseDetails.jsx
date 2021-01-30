@@ -25,8 +25,16 @@ const CourseDetails = () => {
                         </div>
 
 
-                        <p className="">
+                        <p className="d-flex">
                             Comparte en:
+
+                            <div className="mx-2">
+                                <span className="icon icon-facebook-circle mx-1"></span>
+                                <span className="icon icon-twitter mx-1"></span>
+                                <span className="icon icon-linkedin mx-1"></span>
+                                <span className="icon icon-whatsapp mx-1"></span>
+                                <span className="icon icon-link mx-1"></span>
+                            </div>
                         </p>
                     </div>
 
@@ -137,7 +145,10 @@ const CourseDetails = () => {
                                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <ul>
-                                            <li>1.1 - ¿Qué es Node.js?</li>
+                                            <li>
+                                                1.1 - ¿Qué es Node.js?
+                                            </li>
+
                                             <li>1.2 - Instalción de Node.js en Windows</li>
                                             <li>1.3 - Instalción de Node.js en Linux</li>
                                             <li>1.4 - Hola mundo con Node.js</li>
