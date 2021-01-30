@@ -15,6 +15,7 @@ import ToUp from './components/to-up/ToUp'
 import CourseDetails from './pages/course-details/CourseDetails'
 import BlogHome from './blog/blog-home/BlogHome'
 import Teachers from './pages/teachers/Teachers'
+import Works from './pages/works/Works'
 
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
           <Route exact path="/blog" component={BlogHome} />
           <Route exact path="/teachers" component={Teachers} />
           <Route exact path="/about" component={About} />
+          <Route exact path="/trabajos" component={Works} />
           <Route exact path="/development" component={Category} />
           <Route exact path="/single-product" component={SingleProduct} />
           <Route exact path="/admin" component={Admin} />

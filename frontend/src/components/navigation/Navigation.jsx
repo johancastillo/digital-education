@@ -85,6 +85,10 @@ const Navigation = () => {
                         <li>
                             <Link to="/teachers">Profesores</Link>
                         </li>
+
+                        <li>
+                            <Link to="/trabajos">Trabajos</Link>
+                        </li>
                     </ul>
 
                     <div>
