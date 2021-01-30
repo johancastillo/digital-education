@@ -70,7 +70,13 @@ const ProductCard = ({ courseID, title, image, stars, type, price, teacher, teac
                 </div>
 
                 <div>
-                    <span className="badge bg-danger"> {type} </span>
+                    
+                    <Link to="/">
+                    <span className="badge bg-danger">
+                        {type}
+                    </span>
+                    </Link>
+
                 </div>
 
                 <p className="card-text pt-2">
@@ -78,10 +84,13 @@ const ProductCard = ({ courseID, title, image, stars, type, price, teacher, teac
                 </p>
 
                 <div className="card-footer px-0">
+                     
+                    <Link to="/teacher-profile">
                     <div className="teacher">
                         <img className="teacher-img" src={teacherImg} alt={teacher} />
                         <span className="d-none d-sm-block" style={{ marginLeft: '5px' }}>{teacher}</span>
                     </div>
+                    </Link>
 
                     <div className="price">
 

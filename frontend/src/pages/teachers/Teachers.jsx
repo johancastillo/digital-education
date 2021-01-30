@@ -94,8 +94,8 @@ const Teachers = () => {
                 <TeacherCard
                     id={8}
                     image={teacher8}
-                    name="Jorge"
-                    lastname="Paisano"
+                    name="Johan"
+                    lastname="Castillo"
                     category="Matemáticas"
                     stars={4}
                     description="Profesor de la UCV"

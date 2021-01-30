@@ -3,13 +3,13 @@ import "./Cart.css"
 import { useContext, useEffect, useState } from "react"
 import AppContext from "../../context/AppContext"
 import axios from 'axios'
-import BotonComprar from "../../components/boton-comprar/BotonComprar"
+import PaymentMethod from "../../components/payment-method/PaymentMethod"
 
 
 const Cart = () => {
     const { cartProducts } = useContext(AppContext)
     const [courses, setCourses] = useState([])
-    
+
 
     // Get data with Axios
     useEffect(() => {
@@ -19,9 +19,9 @@ const Cart = () => {
                 response => setCourses(response.data)
             )
             .catch(error => console.log(error))
-        }, [])
-        
-        let totalPrice = 0
+    }, [])
+
+    let totalPrice = 0
 
     return (
         <div className="cart-page px-4">
@@ -31,42 +31,63 @@ const Cart = () => {
                     cartProducts.length === 0 ? "No hay productos en el carrito" : "Estos son los productos de tu carrito"
                 }
             </p>
-            
 
-            {
-                courses.map(
-                    course => {
-                        const validation = cartProducts.includes(course.id)
+            <div className="container mt-4">
+                <div className="row">
+                    <div className="col-md-7">
+                        {
+                            courses.map(
+                                course => {
+                                    const validation = cartProducts.includes(course.id)
 
-                        if(validation){
-                            totalPrice += course.price                    
-                            return (
-                                <CardShopping 
-                                    title={course.title}
-                                    image={course.image}
-                                    price={course.price}
-                                />
+                                    if (validation) {
+                                        totalPrice += course.price
+                                        return (
+                                            <CardShopping
+                                                title={course.title}
+                                                image={course.image}
+                                                price={course.price}
+                                                teacher={course.teacher}
+                                            />
+                                        )
+                                    }
+                                }
                             )
                         }
-                    }
-                )
-            }    
-            
-            <h4 className="total p-4 text-center">
-                {
-                    totalPrice > 0 ? `Total: $${totalPrice} USD` : ""
-                }
-            </h4>
 
-            <div>
-                {
-                    totalPrice > 0 ? <BotonComprar /> : ""
-                }
+                        <div className="d-flex justify-content-between">
 
+                            {
+                                totalPrice > 0 ?
+                                
+                                <div className="p-4" style={{ cursor: 'pointer' }}>
+                                    <span className="icon-cart"></span>
+                                    <span className="mx-2">Vaciar carrito</span>
+                                </div>
+                                :
+                                ""
+                            }
+
+                            <h5 className="total p-4 text-center">
+                                {
+                                    totalPrice > 0 ? `Total: $${totalPrice} USD` : ""
+                                }
+                            </h5>
+                        </div>
+
+                    </div>
+
+                    <div className="col-md-5">
+                        {
+                            totalPrice > 0 ? <PaymentMethod /> : ""
+                        }
+                    </div>
+                </div>
             </div>
-            
 
-           
+
+
+
         </div>
 
 
@@ -74,7 +95,7 @@ const Cart = () => {
     )
 
 
-   
+
 
 
 }

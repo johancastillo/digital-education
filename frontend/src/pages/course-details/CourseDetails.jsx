@@ -1,3 +1,4 @@
+import Stars from "../../components/stars/Stars"
 import TeacherCard from "../../components/teacher-card/TeacherCard"
 
 import teacher from './8.png'
@@ -15,7 +16,16 @@ const CourseDetails = () => {
                             style={{ borderRadius: '5px' }}
                         />
 
-                        <p className="mt-4">
+                        <div className="d-flex mt-4">
+                            <p style={{ marginRight: '10px' }}>Calificación: </p>
+                            <Stars stars={3.5} />
+                            <p style={{ marginLeft: '10px' }}>
+                                {'3.5'}
+                            </p>
+                        </div>
+
+
+                        <p className="">
                             Comparte en:
                         </p>
                     </div>
@@ -28,18 +38,37 @@ const CourseDetails = () => {
                             Aprende a crear aplicaciones con JavaScript en el lado del servidor.
                         </p>
 
-                        <p>Nivel: Básico</p>
-                        <p>Fecha de lanzamiento: 06 de Enero 2021</p>
-                        <p>Duración: +8 horas (Ver temario)</p>
+                        <p>
+                            <span style={{ marginRight: '10px', fontSize: '20px' }} className="icon-line-chart-down"></span>
+                            Nivel: Básico
+                        </p>
+
+                        <p>
+                            <span style={{ marginRight: '10px', fontSize: '20px' }} className="icon-calendar"></span>
+                            Fecha de lanzamiento: 06 de Enero 2021
+                        </p>
+
+                        <p>
+                        <span style={{marginRight: '10px', fontSize: '20px'}} className="icon-line-chart-down"></span>
+                            <span style={{ marginRight: '10px', fontSize: '20px' }} className="icon-time"></span>
+                            Duración: +8 horas (Ver temario)
+                        </p>
+
 
                         <div className="container-fluid">
                             <div className="row">
                                 <div className="col-md-6 text-center">
-                                    <button className="btn btn-primary my-2">Cómpralo por $15 USD</button>
+                                    <button className="btn btn-primary my-2">
+                                        <span className="icon-cart mx-1"></span>
+                                        Cómpralo por $15
+                                    </button>
 
                                 </div>
                                 <div className="col-md-6 text-center">
-                                    <button className="btn btn-outline-primary my-2">Regala este curso</button>
+                                    <button className="btn btn-outline-primary my-2">
+                                        <span className="icon-gift-void mx-1"></span>
+                                        Regala este curso
+                                    </button>
                                 </div>
                             </div>
                         </div>
