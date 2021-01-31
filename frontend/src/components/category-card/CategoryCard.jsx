@@ -1,6 +1,6 @@
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
-const CategoryCard = ({ name, image }) => {
+const CategoryCard = ({ name, image, courses, specialties, ebooks, posts }) => {
     return (
         <Link to="/development">
             <div className="card" style={{ width: '100%' }}>
@@ -11,6 +11,7 @@ const CategoryCard = ({ name, image }) => {
                         {name}
                     </h5>
                 </div>
+                
             </div>
         </Link>
     )

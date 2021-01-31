@@ -20,6 +20,8 @@ import TeacherProfile from './pages/teacher-profile/TeacherProfile'
 import Categories from './pages/categories/Categories'
 import StudentProfile from './pages/student-profile/StudentProfile'
 import CreateCourse from './pages/create-course/CreateCourse'
+import Bloguers from './blog/blogers/Bloguers'
+import Article from './blog/article/Article'
 
 
 const App = () => {
@@ -37,6 +39,8 @@ const App = () => {
           <Route exact path="/teacher-profile" component={TeacherProfile} />
           <Route exact path="/categorias" component={Categories} />
           <Route exact path="/about" component={About} />
+          <Route exact path="/blog/bloguers" component={Bloguers} />
+          <Route exact path="/blog/article" component={Article} />
           <Route exact path="/trabajos" component={Works} />
           <Route exact path="/student-profile" component={StudentProfile} />
           <Route exact path="/development" component={Category} />
