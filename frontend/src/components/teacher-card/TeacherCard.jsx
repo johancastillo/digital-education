@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom"
 import Stars from "../stars/Stars"
+import venezuelaFlag from './venezuela.png'
 
-const TeacherCard = ({ name, profesion, lastname, image, country, stars, category, description }) => {
+const Flags = {
+    "Venezuela": venezuelaFlag
+}
+
+const TeacherCard = ({ name, profesion, lastname, image, city, country, stars, category, description }) => {
+    const flag = Flags[country]
+
     return (
         <div className="card" style={{ width: '100%' }}>
             <Link to="/teacher-profile">
@@ -34,24 +41,32 @@ const TeacherCard = ({ name, profesion, lastname, image, country, stars, categor
                     </p>
                 </Link>
 
-                <p className="card-text text-center mt-2">
+                <p style={{ textAlign: 'justify' }} className="mt-2">
                     {description ? description : ""}
                 </p>
 
                 <Link to="country">
-                <p className="text-center">
-                    {
-                        country ? country : ""
-                    }
-                </p>
+                    <div className="d-flex justify-content-center">
+                        {
+                            country ?
+                            <img width="30px" height="20px" src={flag} alt="" />
+                            :
+                            ""
+                        }
+                        <p className="text-center mx-1">
+                            {
+                                country ? `${city}, ${country}` : ""
+                            }
+                        </p>
+                    </div>
                 </Link>
-                 
+
                 <Link to="/development">
-                <div className="text-center">
-                    <span className="badge bg-danger">
-                        {category}
-                    </span>
-                </div>
+                    <div className="text-center">
+                        <span className="badge bg-danger">
+                            {category}
+                        </span>
+                    </div>
                 </Link>
 
 

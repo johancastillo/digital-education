@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import ProductCard from "../../components/product-card/ProductCard"
 import TeacherCard from "../../components/teacher-card/TeacherCard"
 
@@ -104,6 +105,11 @@ const Article = () => {
                             lastname="Rojas"
                             stars={3.5}
                             profesion="Copywriter"
+                            category="Tendencias"
+                            country="Venezuela"
+                            city="Caracas"
+                            description="A través de la razón buscamos convencer. 
+                            A través del sentimiento, buscamos conmover"
 
                         />
 
@@ -135,8 +141,13 @@ const Article = () => {
                             Continúa leyendo
                         </h5>
 
+                        <Link to="/">
                         <img width="100%" className="my-2" style={{ borderRadius: '8px' }} src="https://edteam-media.s3.amazonaws.com/blogs/original/1ef5c55b-3335-4bad-8abc-0a4945a720ec.png" alt="" />
+                        </Link>
+
+                        <Link to="/">
                         <img width="100%" className="my-2" style={{ borderRadius: '8px' }} src="https://edteam-media.s3.amazonaws.com/blogs/original/cab66205-99d2-4a98-8174-be1753c5303d.jpg" alt="" />
+                        </Link>
 
                         <br />
                         <br />
@@ -147,19 +158,14 @@ const Article = () => {
                         </h5>
 
                         <img width="100%" className="my-2" style={{ borderRadius: '8px' }} src="https://epinium.com/wp-content/uploads/2018/09/amazon-advertising.jpg" alt="" />
-                        <h6 className="">
-                            Sácale el máximo rendimiento a tu emprendimiento
-                        </h6>
+                        
 
 
                     </div>
                 </div>
             </div>
 
-            {/* Banner de publicidad */}
-            <div className="">
-                <img width="100%" style={{ borderRadius: '8px' }} src="https://1z1euk35x7oy36s8we4dr6lo-wpengine.netdna-ssl.com/wp-content/uploads/2018/11/amazon_advertisting_logo.png" alt="" />
-            </div>
+            
 
         </div>
     )
