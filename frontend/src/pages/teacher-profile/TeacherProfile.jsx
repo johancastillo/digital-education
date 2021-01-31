@@ -19,7 +19,11 @@ const TeacherProfile = () => {
                     </div>
 
                     <div className="col-md-8">
-
+                        <div className="card p-4">
+                            <h5 className="text-center">
+                                Perfil del profesor: Johan Castillo
+                            </h5>
+                        </div>
                     </div>
                 </div>
             </div>
