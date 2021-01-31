@@ -3,12 +3,10 @@ import About from './pages/about/About'
 import Category from './pages/category/Category'
 import Home from './pages/home/Home'
 import PageNotFound from './pages/page-not-found/PageNotFound'
-import SingleProduct from './pages/student-profile/StudentProfile'
 import Admin from './pages/admin/Admin'
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import Navigation from './components/navigation/Navigation'
-import Course from './pages/course/Course'
 import Cart from './pages/cart/Cart'
 import Favorites from './pages/favorites/Favorites'
 import ToUp from './components/to-up/ToUp'
@@ -22,6 +20,7 @@ import StudentProfile from './pages/student-profile/StudentProfile'
 import CreateCourse from './pages/create-course/CreateCourse'
 import Bloguers from './blog/blogers/Bloguers'
 import Article from './blog/article/Article'
+import Classroom from './pages/classroom/Classroom'
 
 
 const App = () => {
@@ -46,7 +45,7 @@ const App = () => {
           <Route exact path="/development" component={Category} />
           <Route exact path="/admin" component={Admin} />
           <Route exact path="/admin/create-course" component={CreateCourse} />
-          <Route exact path="/cursos/html/1-1" component={Course} />
+          <Route exact path="/cursos/html/1-1" component={Classroom} />
           <Route exact path="/curso" component={CourseDetails} />
           <Route exact path="/cart" component={Cart} />
           <Route exact path="/favorites" component={Favorites} />

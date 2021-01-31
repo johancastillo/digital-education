@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Stars from "../../components/stars/Stars"
 import TeacherCard from "../../components/teacher-card/TeacherCard"
 
@@ -145,10 +146,17 @@ const CourseDetails = () => {
                                     <div class="accordion-body">
                                         <ul>
                                             <li>
-                                                1.1 - ¿Qué es Node.js?
+                                                <Link to="/cursos/html/1-1">
+                                                    1.1 - ¿Qué es Node.js?
+                                                </Link>
                                             </li>
 
-                                            <li>1.2 - Instalción de Node.js en Windows</li>
+                                            <li>
+                                                <Link>
+                                                    1.2 - Instalción de Node.js en Windows
+                                                </Link>
+                                            </li>
+
                                             <li>1.3 - Instalción de Node.js en Linux</li>
                                             <li>1.4 - Hola mundo con Node.js</li>
                                             <li>1.5 - Acerca de NPM</li>
