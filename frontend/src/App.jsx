@@ -21,6 +21,7 @@ import CreateCourse from './pages/create-course/CreateCourse'
 import Bloguers from './blog/blogers/Bloguers'
 import Article from './blog/article/Article'
 import Classroom from './pages/classroom/Classroom'
+import CoursesList from './pages/courses-list/CoursesList'
 
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/blog" component={BlogHome} />
+          <Route exact path="/cursos" component={CoursesList} />
           <Route exact path="/teachers" component={Teachers} />
           <Route exact path="/teacher-profile" component={TeacherProfile} />
           <Route exact path="/categorias" component={Categories} />

@@ -5,8 +5,10 @@ import video from './html.mp4'
 const Classroom = () => {
     return (
         <div className="page">
-            <div className="px-4">
-                <video src={video} width="100%" controls></video>
+            <div className="container">
+                <div className="px-4">
+                    <video src={video} width="100%" controls></video>
+                </div>
             </div>
 
             <div className="container my-4">
