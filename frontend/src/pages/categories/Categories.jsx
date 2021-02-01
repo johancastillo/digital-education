@@ -1,36 +1,35 @@
 
-import CategoriesSection from '../../components/categories-section/CategoriesSection'
 import CategoryCard from '../../components/category-card/CategoryCard'
 import data from './categories.json'
 
 
 const Categories = () => {
-    let number = 0
 
     return (
         <div className="page">
 
-            <div className="section">
-                <div className="categories">
+            <div className="container">
+                <div className="section">
+                    <div className="categories">
 
-                    {
-                        data.map(category => {
-                            number++
+                        {
+                            data.map(category => {
 
-                            return (
-                                <CategoryCard
-                                    categoryID={category.id}
-                                    name={category.title}
-                                    image={category.image }
-                                    courses={category.courses}
-                                    specialties={category.specialties}
-                                    ebooks={category.ebooks}
-                                    posts={category.posts}
-                                />
-                            )
-                        })
-                    }
+                                return (
+                                    <CategoryCard
+                                        categoryID={category.id}
+                                        name={category.title}
+                                        image={category.image}
+                                        courses={category.courses}
+                                        specialties={category.specialties}
+                                        ebooks={category.ebooks}
+                                        posts={category.posts}
+                                    />
+                                )
+                            })
+                        }
 
+                    </div>
                 </div>
             </div>
         </div>

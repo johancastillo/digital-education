@@ -221,79 +221,80 @@ const BlogHome = () => {
             </div>
 
             {/* Slider */}
+            <div className="container">
+                <div className="px-5 mt-5">
+                    <img src={slider1} style={{ borderRadius: '8px' }} class="d-block w-100" alt="..." />
+                </div>
 
-            <div className="px-5 mt-5">
-                <img src={slider1} style={{ borderRadius: '8px' }} class="d-block w-100" alt="..." />
-            </div>
 
-
-            <h5 className="m-5 text-uppercase">
-                Últimos posts
+                <h5 className="m-5 text-uppercase">
+                    Últimos posts
             </h5>
 
-            <div className="gallery px-5">
-                <Post
-                    postID="1"
-                    image="https://edteam-media.s3.amazonaws.com/blogs/original/428aeb7d-daa4-4629-a679-706895c6bdca.png"
-                    title="Cursos más vistos en el 2020"
-                    date="22 de ene. 2021"
-                />
+                <div className="gallery px-5">
+                    <Post
+                        postID="1"
+                        image="https://edteam-media.s3.amazonaws.com/blogs/original/428aeb7d-daa4-4629-a679-706895c6bdca.png"
+                        title="Cursos más vistos en el 2020"
+                        date="22 de ene. 2021"
+                    />
 
-                <Post
-                    postID="1"
-                    image="https://edteam-media.s3.amazonaws.com/blogs/original/428aeb7d-daa4-4629-a679-706895c6bdca.png"
-                    title="Cursos más vistos en el 2020"
-                    date="22 de ene. 2021"
-                />
+                    <Post
+                        postID="1"
+                        image="https://edteam-media.s3.amazonaws.com/blogs/original/428aeb7d-daa4-4629-a679-706895c6bdca.png"
+                        title="Cursos más vistos en el 2020"
+                        date="22 de ene. 2021"
+                    />
 
-                <Post
-                    postID="1"
-                    image="https://edteam-media.s3.amazonaws.com/blogs/original/428aeb7d-daa4-4629-a679-706895c6bdca.png"
-                    title="Cursos más vistos en el 2020"
-                    date="22 de ene. 2021"
-                />
+                    <Post
+                        postID="1"
+                        image="https://edteam-media.s3.amazonaws.com/blogs/original/428aeb7d-daa4-4629-a679-706895c6bdca.png"
+                        title="Cursos más vistos en el 2020"
+                        date="22 de ene. 2021"
+                    />
 
-                <Post
-                    postID="1"
-                    image="https://edteam-media.s3.amazonaws.com/blogs/original/428aeb7d-daa4-4629-a679-706895c6bdca.png"
-                    title="Cursos más vistos en el 2020"
-                    date="22 de ene. 2021"
-                />
+                    <Post
+                        postID="1"
+                        image="https://edteam-media.s3.amazonaws.com/blogs/original/428aeb7d-daa4-4629-a679-706895c6bdca.png"
+                        title="Cursos más vistos en el 2020"
+                        date="22 de ene. 2021"
+                    />
 
-                <Post
-                    postID="1"
-                    image="https://edteam-media.s3.amazonaws.com/blogs/original/428aeb7d-daa4-4629-a679-706895c6bdca.png"
-                    title="Cursos más vistos en el 2020"
-                    date="22 de ene. 2021"
-                />
+                    <Post
+                        postID="1"
+                        image="https://edteam-media.s3.amazonaws.com/blogs/original/428aeb7d-daa4-4629-a679-706895c6bdca.png"
+                        title="Cursos más vistos en el 2020"
+                        date="22 de ene. 2021"
+                    />
 
-                <Post
-                    postID="1"
-                    image="https://edteam-media.s3.amazonaws.com/blogs/original/428aeb7d-daa4-4629-a679-706895c6bdca.png"
-                    title="Cursos más vistos en el 2020"
-                    date="22 de ene. 2021"
-                />
+                    <Post
+                        postID="1"
+                        image="https://edteam-media.s3.amazonaws.com/blogs/original/428aeb7d-daa4-4629-a679-706895c6bdca.png"
+                        title="Cursos más vistos en el 2020"
+                        date="22 de ene. 2021"
+                    />
 
-                <Post
-                    postID="1"
-                    image="https://edteam-media.s3.amazonaws.com/blogs/original/428aeb7d-daa4-4629-a679-706895c6bdca.png"
-                    title="Cursos más vistos en el 2020"
-                    date="22 de ene. 2021"
-                />
+                    <Post
+                        postID="1"
+                        image="https://edteam-media.s3.amazonaws.com/blogs/original/428aeb7d-daa4-4629-a679-706895c6bdca.png"
+                        title="Cursos más vistos en el 2020"
+                        date="22 de ene. 2021"
+                    />
 
-                <Post
-                    postID="1"
-                    image="https://edteam-media.s3.amazonaws.com/blogs/original/428aeb7d-daa4-4629-a679-706895c6bdca.png"
-                    title="Cursos más vistos en el 2020"
-                    date="22 de ene. 2021"
-                />
+                    <Post
+                        postID="1"
+                        image="https://edteam-media.s3.amazonaws.com/blogs/original/428aeb7d-daa4-4629-a679-706895c6bdca.png"
+                        title="Cursos más vistos en el 2020"
+                        date="22 de ene. 2021"
+                    />
 
-                <Post
-                    postID="1"
-                    image="https://edteam-media.s3.amazonaws.com/blogs/original/428aeb7d-daa4-4629-a679-706895c6bdca.png"
-                    title="Cursos más vistos en el 2020"
-                    date="22 de ene. 2021"
-                />
+                    <Post
+                        postID="1"
+                        image="https://edteam-media.s3.amazonaws.com/blogs/original/428aeb7d-daa4-4629-a679-706895c6bdca.png"
+                        title="Cursos más vistos en el 2020"
+                        date="22 de ene. 2021"
+                    />
+                </div>
             </div>
 
         </div>

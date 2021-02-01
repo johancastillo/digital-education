@@ -95,6 +95,14 @@ const Article = () => {
                             </p>
                         </div>
 
+                        <div className="mb-5 mt-2">
+                            <h5 className="text-center text-uppercase">
+                                Publicidad
+                            </h5>
+
+                            <img width="100%" className="" style={{ borderRadius: '8px' }} src="https://epinium.com/wp-content/uploads/2018/09/amazon-advertising.jpg" alt="" />
+                        </div>
+
 
                     </div>
 
@@ -142,30 +150,26 @@ const Article = () => {
                         </h5>
 
                         <Link to="/">
-                        <img width="100%" className="my-2" style={{ borderRadius: '8px' }} src="https://edteam-media.s3.amazonaws.com/blogs/original/1ef5c55b-3335-4bad-8abc-0a4945a720ec.png" alt="" />
+                            <img width="100%" className="my-2" style={{ borderRadius: '8px' }} src="https://edteam-media.s3.amazonaws.com/blogs/original/1ef5c55b-3335-4bad-8abc-0a4945a720ec.png" alt="" />
                         </Link>
 
                         <Link to="/">
-                        <img width="100%" className="my-2" style={{ borderRadius: '8px' }} src="https://edteam-media.s3.amazonaws.com/blogs/original/cab66205-99d2-4a98-8174-be1753c5303d.jpg" alt="" />
+                            <img width="100%" className="my-2" style={{ borderRadius: '8px' }} src="https://edteam-media.s3.amazonaws.com/blogs/original/cab66205-99d2-4a98-8174-be1753c5303d.jpg" alt="" />
                         </Link>
 
                         <br />
                         <br />
                         <br />
 
-                        <h5 className="text-center text-uppercase">
-                            Publicidad
-                        </h5>
 
-                        <img width="100%" className="my-2" style={{ borderRadius: '8px' }} src="https://epinium.com/wp-content/uploads/2018/09/amazon-advertising.jpg" alt="" />
-                        
+
 
 
                     </div>
                 </div>
             </div>
 
-            
+
 
         </div>
     )

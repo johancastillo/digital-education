@@ -15,111 +15,113 @@ import teacher10 from './images/10.png'
 
 const Teachers = () => {
     return (
-        <div className="teachers">
-            <img src={banner} width="100%" alt=""/>
+        <div className="page">
+            <div className="container">
+                <img src={banner} width="100%" alt="" />
 
-            <h1 className="text-center mt-4">Profesores</h1>
+                <h1 className="text-center mt-4">Profesores</h1>
 
-            <div className="gallery">
-                <TeacherCard
-                    id={1}
-                    image={teacher1}
-                    name="Pablo"
-                    lastname="Gonzales"
-                    category="Matemáticas"
-                    stars={4}
-                    description="Profesor de la UCV"
-                />
+                <div className="gallery">
+                    <TeacherCard
+                        id={1}
+                        image={teacher1}
+                        name="Pablo"
+                        lastname="Gonzales"
+                        category="Matemáticas"
+                        stars={4}
+                        description="Profesor de la UCV"
+                    />
 
-                <TeacherCard
-                    id={2}
-                    image={teacher2}
-                    name="Miguel"
-                    lastname="Azuaje"
-                    category="Mercadeo y ventas"
-                    stars={4}
-                    description="Profesor de la Universidad Metropilitana"
-                />
+                    <TeacherCard
+                        id={2}
+                        image={teacher2}
+                        name="Miguel"
+                        lastname="Azuaje"
+                        category="Mercadeo y ventas"
+                        stars={4}
+                        description="Profesor de la Universidad Metropilitana"
+                    />
 
-                <TeacherCard
-                    id={3}
-                    image={teacher3}
-                    name="Luisa"
-                    lastname="Cáceres"
-                    category="Física"
-                    stars={4}
-                    description="Profesora de la Universidad Santa María"
-                />
+                    <TeacherCard
+                        id={3}
+                        image={teacher3}
+                        name="Luisa"
+                        lastname="Cáceres"
+                        category="Física"
+                        stars={4}
+                        description="Profesora de la Universidad Santa María"
+                    />
 
-                <TeacherCard
-                    id={4}
-                    image={teacher4}
-                    name="Robert"
-                    lastname="Pérez"
-                    category="Matemáticas"
-                    stars={4}
-                    description="Profesor de la UCV"
-                />
+                    <TeacherCard
+                        id={4}
+                        image={teacher4}
+                        name="Robert"
+                        lastname="Pérez"
+                        category="Matemáticas"
+                        stars={4}
+                        description="Profesor de la UCV"
+                    />
 
-                <TeacherCard
-                    id={5}
-                    image={teacher5}
-                    name="Isabelle"
-                    lastname="Campos"
-                    category="Matemáticas"
-                    stars={4}
-                    description="Profesor de la UCV"
-                />
+                    <TeacherCard
+                        id={5}
+                        image={teacher5}
+                        name="Isabelle"
+                        lastname="Campos"
+                        category="Matemáticas"
+                        stars={4}
+                        description="Profesor de la UCV"
+                    />
 
-                <TeacherCard
-                    id={6}
-                    image={teacher6}
-                    name="Yorgelis"
-                    lastname="Gómes"
-                    category="Matemáticas"
-                    stars={4}
-                    description="Profesor de la UCV"
-                />
+                    <TeacherCard
+                        id={6}
+                        image={teacher6}
+                        name="Yorgelis"
+                        lastname="Gómes"
+                        category="Matemáticas"
+                        stars={4}
+                        description="Profesor de la UCV"
+                    />
 
-                <TeacherCard
-                    id={7}
-                    image={teacher7}
-                    name="Ángel"
-                    lastname="Rodriguez"
-                    category="Matemáticas"
-                    stars={4}
-                    description="Profesor de la UCV"
-                />
+                    <TeacherCard
+                        id={7}
+                        image={teacher7}
+                        name="Ángel"
+                        lastname="Rodriguez"
+                        category="Matemáticas"
+                        stars={4}
+                        description="Profesor de la UCV"
+                    />
 
-                <TeacherCard
-                    id={8}
-                    image={teacher8}
-                    name="Johan"
-                    lastname="Castillo"
-                    category="Matemáticas"
-                    stars={4}
-                    description="Profesor de la UCV"
-                />
+                    <TeacherCard
+                        id={8}
+                        image={teacher8}
+                        name="Johan"
+                        lastname="Castillo"
+                        category="Matemáticas"
+                        stars={4}
+                        description="Profesor de la UCV"
+                    />
 
-                <TeacherCard
-                    id={9}
-                    image={teacher9}
-                    name="Miguel"
-                    lastname="Castillo"
-                    category="Matemáticas"
-                    stars={4}
-                    description="Profesor de la UCV"
-                />
+                    <TeacherCard
+                        id={9}
+                        image={teacher9}
+                        name="Miguel"
+                        lastname="Castillo"
+                        category="Matemáticas"
+                        stars={4}
+                        description="Profesor de la UCV"
+                    />
 
-                <TeacherCard
-                    id={10}
-                    image={teacher10}
-                    name="Gabriela"
-                    lastname="Salas"
-                    category="Matemáticas"
-                    stars={4}
-                    description="Profesor de la UCV"
-                />
+                    <TeacherCard
+                        id={10}
+                        image={teacher10}
+                        name="Gabriela"
+                        lastname="Salas"
+                        category="Matemáticas"
+                        stars={4}
+                        description="Profesor de la UCV"
+                    />
+                </div>
             </div>
         </div>
     )
