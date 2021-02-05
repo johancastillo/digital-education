@@ -12,6 +12,25 @@
     grid-gap: 20px;
 }
 
+.horizontal-scroll-contenedor{
+    overflow-y: hidden; 
+    overflow-x: auto;
+
+    width: auto;
+    height: 50px;
+    padding: 10px;
+    white-space: nowrap;
+
+
+}
+
+.horizontal-scroll-contenedor div{
+    width: 100px;
+    height: 50px;
+    margin: 0 10px 0 0;
+    padding: 0;
+    display: inline-block;
+}
 
 
 @media screen and (min-width: 1400px){

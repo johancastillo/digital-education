@@ -7,7 +7,7 @@ import AppContext from '../../context/AppContext'
 
 const Navigation = () => {
     const [menu, setMenu] = useState('menu-hidden')
-    const {cartProducts} = useContext(AppContext)
+    const { cartProducts, login } = useContext(AppContext)
 
     const closeMenu = () => setMenu('menu-hidden')
     const openMenu = () => setMenu('menu-active')
@@ -18,40 +18,58 @@ const Navigation = () => {
             <header className="navigation">
 
                 <div className="box-logo">
-                    <span className="icon-menu" style={{cursor: 'pointer'}} onClick={openMenu}></span>
+                    <span className="icon-menu" style={{ cursor: 'pointer' }} onClick={openMenu}></span>
 
-                    <Link to="/">
-                        <img src={logo} alt="logo" />
-
-                        <span className="logo-text">
-                            Digital Education
-                        </span>
-                    </Link>
-                </div>
-
-
-                <div className="box-search" style={{ display: 'none' }}>
-                    <input type="text" placeholder="Buscar..." />
-                </div>
-
-                <div className="box-icons">
-
-                    <span className="icon icon-search"></span>
-
-                    <Link to="/favorites">
-                        <span className="icon icon-bookmark-void"></span>
-                    </Link>
-
-                    <div className="cart">
-                        <Link to="/cart">
-                            <span className="number">
-                                {cartProducts.length}
-                            </span>
-                            <span className="icon icon-cart"></span>
+                    <div>
+                        <Link to="/">
+                            <img className="mx-2" src={logo} alt="logo" />
                         </Link>
-                    </div>
 
+                        <button type="button" className="btn btn-info" style={{ marginLeft: '10px' }}>
+                            Explorar
+                        </button>
+
+                    </div>
                 </div>
+
+
+                <div className="box-search">
+                    <input type="text" className="form-control" placeholder="Buscar..." />
+                </div>
+
+                {
+                    login ?
+                        <div className="box-icons">
+
+                            <span className="icon icon-search"></span>
+
+                            <Link to="/favorites">
+                                <span className="icon icon-bookmark-void"></span>
+                            </Link>
+
+                            <div className="cart">
+                                <Link to="/cart">
+                                    <span className="number">
+                                        {cartProducts.length}
+                                    </span>
+                                    <span className="icon icon-cart"></span>
+                                </Link>
+                            </div>
+
+                        </div>
+                        :
+                        <div>
+                            <Link to="/login">
+                                <a>Iniciar sesión</a>
+                            </Link>
+
+                            <Link to="/register">
+                                <button type="button" className="btn btn-info" style={{ marginLeft: '10px' }}>
+                                    Únete de forma gratuita
+                                </button>
+                            </Link>
+                        </div>
+                }
 
             </header>
 
@@ -93,7 +111,7 @@ const Navigation = () => {
                         <li>
                             <Link to="/blog/bloguers">Bloguers</Link>
                         </li>
-                        
+
                         <li>
                             <Link to="/admin/create-course">
                                 Crear cursos
@@ -108,11 +126,11 @@ const Navigation = () => {
                             <Link to="/trabajos">Trabajos</Link>
                         </li>
 
-                       
+
                     </ul>
 
                     <div>
-                        <span className="icon icon-x" style={{cursor: 'pointer'}} onClick={closeMenu}></span>
+                        <span className="icon icon-x" style={{ cursor: 'pointer' }} onClick={closeMenu}></span>
                     </div>
                 </div>
 

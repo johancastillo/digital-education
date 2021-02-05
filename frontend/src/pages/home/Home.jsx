@@ -34,7 +34,7 @@ const Home = () => {
 
     // Get data with Axios
     useEffect(() => {
-        axios.get('https://johancastillo.github.io/json-api-fake/digital-education/courses.json')
+        axios.get('http://localhost:8080/courses')
             .then(
                 response => setCourses(response.data),
                 setLoading(false)
@@ -45,76 +45,57 @@ const Home = () => {
     // Rendering component
     return (
         <>
-            
-            
+
+
             <div className="home">
                 <Banner />
 
-                <div className="mt-4 px-5 d-flex justify-content-between">
-                    <div>
 
-                    </div>
+                {loading ? <Loading /> : ""}
 
-                    <div>
-                        <input type="text" onChange={handleSearch} placeholder="Empieza a buscar..." className="form-control" />
+                <div className="container mt-5">
+                    <h3 className="text-center">
+                        Colaboramos con más de 200 universidades y empresas líderes
+                    </h3>
+
+                    <div class="horizontal-scroll-contenedor">
+                        <div>Contenedor 1</div>
+                        <div>Contenedor 2</div>
+                        <div>Contenedor 3</div>
+                        <div>Contenedor 4</div>
+                        <div>Contenedor 5</div>
+                        <div>Contenedor 6</div>
+                        <div>Contenedor 7</div>
+                        <div>Contenedor 8</div>
+                        <div>Contenedor 9</div>
+                        <div>Contenedor 10</div>
+                        <div>Contenedor 11</div>
+                        <div>Contenedor 12</div>
+                        <div>Contenedor 13</div>
+                        <div>Contenedor 14</div>
+                        <div>Contenedor 15</div>
+                        <div>Contenedor 16</div>
+                        <div>Contenedor 17</div>
+                        <div>Contenedor 18</div>
+                        <div>Contenedor 19</div>
+                        <div>Contenedor 20</div>
                     </div>
                 </div>
-                
-                { loading ? <Loading /> : "" }
 
-                <div className="gallery">
-                    {
-                        // Rendering courses list
-                        filter ?
-                            courses.map(course => {
-                                const wordSearching = searching.toLowerCase()
-                                const titleSearching = course.title.toLowerCase()
-                                const validation = titleSearching.includes(wordSearching)
-
-                                if (validation) {
-                                    return (
-                                        <ProductCard
-                                            key={course.courseID}
-                                            courseID={course.id}
-                                            image={course.image}
-                                            title={course.title}
-                                            stars={course.stars}
-                                            type={course.type}
-                                            price={course.price}
-                                            teacher={course.teacher}
-                                            teacherImg={course.teacherImg}
-                                            description={course.description}
-                                        />
-                                    )
-                                } else {
-                                    <h1 className="text-center">
-                                        No se hay resultados de {`"${wordSearching}"`}
-                                    </h1>
-
-                                }
-                            })
-                            :
-                            courses.map(course => {
-                                return (
-                                    <ProductCard
-                                        key={course.courseID}
-                                        courseID={course.id}
-                                        image={course.image}
-                                        title={course.title}
-                                        stars={course.stars}
-                                        type={course.type}
-                                        price={course.price}
-                                        teacher={course.teacher}
-                                        teacherImg={course.teacherImg}
-                                        description={course.description}
-                                    />)
-                            })
-                    }
+                <h3 className="text-center mt-4">
+                    Alcanza tus metas
+                </h3>
 
 
+                <h3 className="text-center mt-4">
+                    Resultado de los estudiantes
+                </h3>
+
+                <h3 className="text-center mt-4">
+                    Profesores más populares
+                </h3>
 
 
-                </div>
 
                 <h2 className="m-4">Categorias principales</h2>
                 <CategoriesSection />

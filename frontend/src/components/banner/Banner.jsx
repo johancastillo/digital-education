@@ -3,16 +3,16 @@ import "./Banner.css"
 import AppContext from '../../context/AppContext'
 // Banners Image
 import banner from './banner.webp'
-import banner2 from './banner2.webp'
+import banner2 from './banner2.jpg'
 
 
 const Banner = () => {
-    const {setFilter, setSearching} = React.useContext(AppContext)
+    const { setFilter, setSearching, login } = React.useContext(AppContext)
 
     const handleSearch = e => {
-        if(e.target.value){
+        if (e.target.value) {
             setFilter(true)
-        } else{
+        } else {
             setFilter(false)
         }
 
@@ -34,9 +34,14 @@ const Banner = () => {
                         Aprende, fórmate y mejora como profesional con conocimientos en herramientas digitales gracias a las clases con el contenido más actualizado en distintas áreas.
                     </p>
 
-                    <div className="mb-3">
-                        <input type="text" onChange={handleSearch} placeholder="¿Qué quieres aprender?" className="form-control" />
-                    </div>
+                    {
+                        login ?
+                            <div className="mb-3">
+                                <input type="text" onChange={handleSearch} placeholder="¿Qué quieres aprender?" className="form-control" />
+                            </div>
+                            :
+                            <button className="btn btn-info">Únete de forma gratuita</button>
+                    }
 
                 </form>
             </div>

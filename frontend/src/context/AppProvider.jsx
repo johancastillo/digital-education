@@ -7,9 +7,11 @@ const AppProvider = ({children}) => {
 	const [cartProducts, setCartProducts] = useState([])
 	const [loading, setLoading] = useState(true)
 	const [favoritesList, setFavoritesList] = useState([])
+    const [login, setLogin] = useState(false)
+
 
 	return (
-		<AppContext.Provider value={{ favoritesList, setFavoritesList, cartProducts, setCartProducts, loading, setLoading, filter, setFilter, searching, setSearching }}>
+		<AppContext.Provider value={{ login, setLogin, favoritesList, setFavoritesList, cartProducts, setCartProducts, loading, setLoading, filter, setFilter, searching, setSearching }}>
 			{children}
 		</AppContext.Provider>
 	);

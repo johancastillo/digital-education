@@ -33,7 +33,7 @@ const CoursesList = () => {
 
     // Get data with Axios
     useEffect(() => {
-        axios.get('https://johancastillo.github.io/json-api-fake/digital-education/courses.json')
+        axios.get('http://localhost:8080/courses')
             .then(
                 response => setCourses(response.data),
                 setLoading(false)
