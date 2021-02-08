@@ -7,25 +7,23 @@ import celmira from './celmira.png'
 import axios from "axios"
 
 const Article = () => {
-    const [content, setContent] = useState({})
+    const [article, setArticle] = useState({})
 
     // GET article
     useEffect(() => {
         axios.get("http://localhost:8080/articles/1")
         .then(
-            response => setContent(response.data)
+            response => setArticle(response.data)
         )
         .catch(
             err => console.log(err)
         )
     }, [])
-
-    // Formater JSON response in HTML
+    
     useEffect(() => {
         let contentEl = document.getElementById("content")
-        contentEl.innerHTML = content.content
-    }, [])
-    
+        contentEl.innerHTML = article.content
+    }, [article])
 
     return (
         <div className="page">
@@ -36,17 +34,17 @@ const Article = () => {
 
                         <div className="card px-4 py-5 m-4">
                             <h5 className="">
-                                {content.title}
+                                {article.title}
                             </h5>
 
-                            <p style={{ textAlign: 'justify' }}>
-                                {content.description}
+                            <p>
+                                {article.description}
                             </p>
                         </div>
                     </div>
 
                     <div className="col-md-6 d-flex justify-content-center align-items-center">
-                        <img style={{ borderRadius: '8px' }} src="https://edteam-media.s3.amazonaws.com/blogs/original/80dc0cbe-befc-44a6-9cd1-756ed60d3ee6.png" class="card-img-top" alt="..." />
+                        <img style={{ borderRadius: '8px' }} src={article.image} class="card-img-top" alt="..." />
 
                     </div>
                 </div>
@@ -79,7 +77,6 @@ const Article = () => {
                             lastname="Rojas"
                             stars={3.5}
                             profesion="Copywriter"
-                            category="Tendencias"
                             country="Venezuela"
                             city="Caracas"
                             description="A través de la razón buscamos convencer. 
