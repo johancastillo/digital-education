@@ -1,569 +1,585 @@
 {
-    "courses": [
-        {
-            "id": 1,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/small/f7dad9a6-e060-4305-9adf-b9a9079075de.jpg",
-            "title": "React desde cero",
-            "stars": 4.5,
-            "type": "Curso",
-            "price": 10,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 2,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/bdf0b692-eef2-411b-8502-56d1d93fa85d.png",
-            "title": "Scripting - Bash / Shell",
-            "stars": 5,
-            "type": "Taller",
-            "price": 8,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 3,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/85d3d7e4-19db-4cff-a4cb-cbead813b6b5.png",
-            "title": "Python desde cero",
-            "stars": 3.5,
-            "type": "Curso",
-            "price": 9,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 4,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/0903d86f-5e06-46f2-87e6-6ad3020a6bec.png",
-            "title": "JavaScript para niños",
-            "stars": 2.5,
-            "type": "Taller",
-            "price": 14,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 5,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/ef9fcbc0-8292-4e65-8022-491baa2bac09.png",
-            "title": "Dibujo desde cero",
-            "stars": 5,
-            "type": "Curso",
-            "price": 10,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 6,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/5ffc4c77-cbc3-476d-9c18-e180882a52c9.jpg",
-            "title": "Linux desde cero",
-            "stars": 3.5,
-            "type": "E-Book",
-            "price": 20,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 7,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/a1a1984b-d7c7-4fdd-b176-6647819d3d2e.png",
-            "title": "Programación para niños con Scratch",
-            "stars": 5,
-            "type": "Especialidad",
-            "price": 65,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 8,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/084a20f8-e327-47ce-a073-1df1f90e4a74.jpg",
-            "title": "Tu primera PWA",
-            "stars": 3,
-            "type": "Taller",
-            "price": 17,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 9,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/f0b3c8c9-c922-4839-ae4e-4152b8b43c44.png",
-            "title": "Inteligencia Artificial",
-            "stars": 2.5,
-            "type": "Especialidad",
-            "price": 80,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 10,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/fbda9747-85b7-482e-8ffc-547b98031ca4.png",
-            "title": "Introducción a las API REST (Gratis)",
-            "stars": 4.5,
-            "type": "Taller",
-            "price": "free",
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 11,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/e41bbf77-d458-48d9-814b-7dd62a214e40.png",
-            "title": "Docker desde cero",
-            "stars": 3.5,
-            "type": "Taller",
-            "price": 10,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 12,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/47766c2e-6ef7-40a9-8c92-50939fe9bfd0.png",
-            "title": "Electrónica desde cero",
-            "stars": 4.5,
-            "type": "E-Book",
-            "price": 7,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 13,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/61e5a210-8dab-412e-a6dc-802c070cc18c.jpg",
-            "title": "JavaScript desde cero",
-            "stars": 4.5,
-            "type": "Especialidad",
-            "price": 90,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 14,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/small/f39cd39c-da23-44f1-b807-d9721ad7aa84.png",
-            "title": "Videojuegos con Canvas",
-            "stars": 3.5,
-            "type": "Curso",
-            "price": 63,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 15,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/small/5ec26692-8451-4297-a59a-adb1829a90e8.jpg",
-            "title": "PHP desde cero",
-            "stars": 4.5,
-            "type": "Taller",
-            "price": 19,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 16,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/small/cf0aecf3-0ddb-43b5-8d44-a7a3b9c54fed.png",
-            "title": "Figma desde cero",
-            "stars": 4.5,
-            "type": "Especialidad",
-            "price": 100,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 17,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/small/e980d90b-58ca-4724-95f2-e167a4774afd.jpg",
-            "title": "SVG desde cero",
-            "stars": 4.5,
-            "type": "Especialidad",
-            "price": 55,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 18,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/small/036ad25e-7ad8-4668-9ab6-36b7eaa5a2db.png",
-            "title": "Notion",
-            "stars": 4.5,
-            "type": "Curso",
-            "price": 44,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 19,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/small/1bada4e8-4bab-4be8-8f2e-83e285515187.png",
-            "title": "Arduino desde cero",
-            "stars": 4.5,
-            "type": "Curso",
-            "price": 20,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 20,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/d793ee5a-9dd1-4a3a-9c82-9b08a5f89a52.png",
-            "title": "Kotlin desde cero",
-            "stars": 4.5,
-            "type": "Curso",
-            "price": 30,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 21,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/e688e4f3-2260-4480-a4c6-9346efb404a5.png",
-            "title": "After Efect",
-            "stars": 2.5,
-            "type": "Curso",
-            "price": 14,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 22,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/c574aade-f5b4-42ae-9d92-6b05e7919f4d.png",
-            "title": "HTML Canvas desde cero",
-            "stars": 5,
-            "type": "E-Book",
-            "price": 16,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 23,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/bc8d9f08-7f85-442a-afb4-10a2a568d504.png",
-            "title": "Azure Fundamentls",
-            "stars": 4.5,
-            "type": "Taller",
-            "price": 10,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 24,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/35d81cae-b9b2-4fbd-9329-8bd20e09ef9f.png",
-            "title": "Unity desde cero",
-            "stars": 4.5,
-            "type": "Curso",
-            "price": 45,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 25,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/608331fa-c0c6-4f7c-9ad7-470903923179.jpg",
-            "title": "Fundamentos de AWS",
-            "stars": 4.5,
-            "type": "Especialidad",
-            "price": 90,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 26,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/f02fc743-189f-4f00-a1af-1716961d5a36.png",
-            "title": "Asana desde cero",
-            "stars": 4.5,
-            "type": "E-Book",
-            "price": 17,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 27,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/df5d119d-6485-4fe1-8457-4e51d78c795e.png",
-            "title": "Latex desde cero",
-            "stars": 4.5,
-            "type": "Especialidad",
-            "price": 100,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 28,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/7ddc32c0-79e8-4551-a89c-f9b0007a5e13.jpg",
-            "title": "Gramatica Avanzada del Inglés",
-            "stars": 4.5,
-            "type": "Curso",
-            "price": 23,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 29,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/6cbc514c-1e04-4bf4-8beb-fa595f363d9d.png",
-            "title": "Spring desde cero",
-            "stars": 4.5,
-            "type": "Curso",
-            "price": 22,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 30,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/e737f2e3-92b3-400e-8d82-1b19e0277012.png",
-            "title": "Server Side Render con Go",
-            "stars": 4.5,
-            "type": "Curso",
-            "price": 13,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 31,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/e00495a5-a7af-41c8-92ec-63702b540b03.jpg",
-            "title": "Mi primera página web",
-            "stars": 4.5,
-            "type": "Curso",
-            "price": "free",
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        },
-        {
-            "id": 32,
-            "image": "https://edteam-media.s3.amazonaws.com/courses/medium/702ee41e-5189-4d93-b1a3-c4818f542888.png",
-            "title": "PrestaShop desde cero",
-            "stars": 4.5,
-            "type": "E-Book",
-            "price": 15,
-            "teacher": "Johan Castillo",
-            "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
-            "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
-        }
-    ],
-    "categories": [
-        {
-            "id": 1,
-            "title": "Diseño",
-            "image": "https://johancastillo.github.io/ducation360-images/images/categories/design.jpg",
-            "courses": 4,
-            "specialties": 1,
-            "ebooks": 2,
-            "posts": 3
-        },
-        {
-            "id": 2,
-            "title": "Desarrollo",
-            "image": "https://johancastillo.github.io/ducation360-images/images/categories/development.jpg",
-            "courses": 4,
-            "specialties": 1,
-            "ebooks": 2,
-            "posts": 1
-        },
-        {
-            "id": 3,
-            "title": "Marketing",
-            "image": "https://johancastillo.github.io/ducation360-images/images/categories/marketing.jpg",
-            "courses": 4,
-            "specialties": 1,
-            "ebooks": 2,
-            "posts": 6
-        },
-        {
-            "id": 4,
-            "title": "Informática y Software",
-            "image": "https://johancastillo.github.io/ducation360-images/images/categories/it-and-software.jpg",
-            "courses": 4,
-            "specialties": 1,
-            "ebooks": 2,
-            "posts": 3
-        },
-        {
-            "id": 5,
-            "title": "Desarrollo Personal",
-            "image": "https://johancastillo.github.io/ducation360-images/images/categories/personal-development.jpg",
-            "courses": 4,
-            "specialties": 1,
-            "ebooks": 2,
-            "posts": 8
-        },
-        {
-            "id": 6,
-            "title": "Negocios",
-            "image": "https://johancastillo.github.io/ducation360-images/images/categories/business.jpg",
-            "courses": 4,
-            "specialties": 1,
-            "ebooks": 2,
-            "posts": 5
-        },
-        {
-            "id": 7,
-            "title": "Fotografía",
-            "image": "https://johancastillo.github.io/ducation360-images/images/categories/photography.jpg",
-            "courses": 4,
-            "specialties": 1,
-            "ebooks": 2,
-            "posts": 9
-        },
-        {
-            "id": 8,
-            "title": "Música",
-            "image": "https://johancastillo.github.io/ducation360-images/images/categories/music.jpg",
-            "courses": 4,
-            "specialties": 1,
-            "ebooks": 2,
-            "posts": 2
-        },
-        {
-            "id": 9,
-            "title": "Matemáticas",
-            "image": "https://johancastillo.github.io/ducation360-images/images/categories/matematicas.png",
-            "courses": 4,
-            "specialties": 1,
-            "ebooks": 2,
-            "posts": 3
-        },
-        {
-            "id": 10,
-            "title": "Física",
-            "image": "https://johancastillo.github.io/ducation360-images/images/categories/fisica.png",
-            "courses": 4,
-            "specialties": 1,
-            "ebooks": 2,
-            "posts": 5
-        },
-        {
-            "id": 11,
-            "title": "Electrónica",
-            "image": "https://johancastillo.github.io/ducation360-images/images/categories/electronica.png",
-            "courses": 4,
-            "specialties": 1,
-            "ebooks": 2,
-            "posts": 3
-    
-        },
-        {
-            "id": 12,
-            "title": "Lengua y literatura",
-            "image": "https://johancastillo.github.io/ducation360-images/images/categories/literatura.png",
-            "courses": 4,
-            "specialties": 1,
-            "ebooks": 2,
-            "posts": 4
-        },
-        {
-            "id": 13,
-            "title": "Química",
-            "image": "https://johancastillo.github.io/ducation360-images/images/categories/quimica.png",
-            "courses": 4,
-            "specialties": 1,
-            "ebooks": 2,
-            "posts": 10
-        },
-        {
-            "id": 14,
-            "title": "Inglés",
-            "image": "https://johancastillo.github.io/ducation360-images/images/categories/ingles.png",
-            "courses": 4,
-            "specialties": 1,
-            "ebooks": 2,
-            "posts": 13
-        },
-        {
-            "id": 15,
-            "title": "Geografía",
-            "image": "https://johancastillo.github.io/ducation360-images/images/categories/geografia.png",
-            "courses": 4,
-            "specialties": 1,
-            "ebooks": 2,
-            "posts": 4
-        },
-        {
-            "id": 16,
-            "title": "Cocina",
-            "image": "https://johancastillo.github.io/ducation360-images/images/categories/food.png",
-            "courses": 4,
-            "specialties": 1,
-            "ebooks": 2,
-            "posts": 3
-        },
-        {
-            "id": 17,
-            "title": "Educación para niños",
-            "image": "https://johancastillo.github.io/ducation360-images/images/categories/kids.png",
-            "courses": 4,
-            "specialties": 1,
-            "ebooks": 2,
-            "posts": 3
-        },
-        {
-            "id": 18,
-            "title": "Deportes",
-            "image": "https://johancastillo.github.io/ducation360-images/images/categories/deporte.png",
-            "courses": 4,
-            "specialties": 1,
-            "ebooks": 2,
-            "posts": 3
-        },
-        {
-            "id": 19,
-            "title": "Finanzas",
-            "image": "https://johancastillo.github.io/ducation360-images/images/categories/finanzas.png",
-            "courses": 4,
-            "specialties": 1,
-            "ebooks": 2,
-            "posts": 7
-        },
-        {
-            "id": 20,
-            "title": "Dibujo",
-            "image": "https://johancastillo.github.io/ducation360-images/images/categories/dibujo.png",
-            "courses": 4,
-            "specialties": 1,
-            "ebooks": 2,
-            "posts": 4
-        },
-        {
-            "id": 21,
-            "title": "Arquitectura",
-            "image": "https://johancastillo.github.io/ducation360-images/images/categories/arquitectura.png",
-            "courses": 4,
-            "specialties": 1,
-            "ebooks": 2,
-            "posts": 2
-        },
-        {
-            "id": 22,
-            "title": "Contabilidad",
-            "image": "https://johancastillo.github.io/ducation360-images/images/categories/contabilidad.png",
-            "courses": 4,
-            "specialties": 1,
-            "ebooks": 2,
-            "posts": 2
-        },
-        {
-            "id": 23,
-            "title": "Economía",
-            "image": "https://johancastillo.github.io/ducation360-images/images/categories/economia.png",
-            "courses": 4,
-            "specialties": 1,
-            "ebooks": 2,
-            "posts": 3
-        }
-    ],
-    "teachers": [
-        
-    ]
+  "courses": [
+    {
+      "id": 1,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/small/f7dad9a6-e060-4305-9adf-b9a9079075de.jpg",
+      "title": "React desde cero",
+      "stars": 4.5,
+      "type": "Curso",
+      "price": 10,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 2,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/bdf0b692-eef2-411b-8502-56d1d93fa85d.png",
+      "title": "Scripting - Bash / Shell",
+      "stars": 5,
+      "type": "Taller",
+      "price": 8,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 3,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/85d3d7e4-19db-4cff-a4cb-cbead813b6b5.png",
+      "title": "Python desde cero",
+      "stars": 3.5,
+      "type": "Curso",
+      "price": 9,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 4,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/0903d86f-5e06-46f2-87e6-6ad3020a6bec.png",
+      "title": "JavaScript para niños",
+      "stars": 2.5,
+      "type": "Taller",
+      "price": 14,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 5,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/ef9fcbc0-8292-4e65-8022-491baa2bac09.png",
+      "title": "Dibujo desde cero",
+      "stars": 5,
+      "type": "Curso",
+      "price": 10,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 6,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/5ffc4c77-cbc3-476d-9c18-e180882a52c9.jpg",
+      "title": "Linux desde cero",
+      "stars": 3.5,
+      "type": "E-Book",
+      "price": 20,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 7,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/a1a1984b-d7c7-4fdd-b176-6647819d3d2e.png",
+      "title": "Programación para niños con Scratch",
+      "stars": 5,
+      "type": "Especialidad",
+      "price": 65,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 8,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/084a20f8-e327-47ce-a073-1df1f90e4a74.jpg",
+      "title": "Tu primera PWA",
+      "stars": 3,
+      "type": "Taller",
+      "price": 17,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 9,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/f0b3c8c9-c922-4839-ae4e-4152b8b43c44.png",
+      "title": "Inteligencia Artificial",
+      "stars": 2.5,
+      "type": "Especialidad",
+      "price": 80,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 10,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/fbda9747-85b7-482e-8ffc-547b98031ca4.png",
+      "title": "Introducción a las API REST (Gratis)",
+      "stars": 4.5,
+      "type": "Taller",
+      "price": "free",
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 11,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/e41bbf77-d458-48d9-814b-7dd62a214e40.png",
+      "title": "Docker desde cero",
+      "stars": 3.5,
+      "type": "Taller",
+      "price": 10,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 12,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/47766c2e-6ef7-40a9-8c92-50939fe9bfd0.png",
+      "title": "Electrónica desde cero",
+      "stars": 4.5,
+      "type": "E-Book",
+      "price": 7,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 13,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/61e5a210-8dab-412e-a6dc-802c070cc18c.jpg",
+      "title": "JavaScript desde cero",
+      "stars": 4.5,
+      "type": "Especialidad",
+      "price": 90,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 14,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/small/f39cd39c-da23-44f1-b807-d9721ad7aa84.png",
+      "title": "Videojuegos con Canvas",
+      "stars": 3.5,
+      "type": "Curso",
+      "price": 63,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 15,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/small/5ec26692-8451-4297-a59a-adb1829a90e8.jpg",
+      "title": "PHP desde cero",
+      "stars": 4.5,
+      "type": "Taller",
+      "price": 19,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 16,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/small/cf0aecf3-0ddb-43b5-8d44-a7a3b9c54fed.png",
+      "title": "Figma desde cero",
+      "stars": 4.5,
+      "type": "Especialidad",
+      "price": 100,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 17,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/small/e980d90b-58ca-4724-95f2-e167a4774afd.jpg",
+      "title": "SVG desde cero",
+      "stars": 4.5,
+      "type": "Especialidad",
+      "price": 55,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 18,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/small/036ad25e-7ad8-4668-9ab6-36b7eaa5a2db.png",
+      "title": "Notion",
+      "stars": 4.5,
+      "type": "Curso",
+      "price": 44,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 19,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/small/1bada4e8-4bab-4be8-8f2e-83e285515187.png",
+      "title": "Arduino desde cero",
+      "stars": 4.5,
+      "type": "Curso",
+      "price": 20,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 20,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/d793ee5a-9dd1-4a3a-9c82-9b08a5f89a52.png",
+      "title": "Kotlin desde cero",
+      "stars": 4.5,
+      "type": "Curso",
+      "price": 30,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 21,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/e688e4f3-2260-4480-a4c6-9346efb404a5.png",
+      "title": "After Efect",
+      "stars": 2.5,
+      "type": "Curso",
+      "price": 14,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 22,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/c574aade-f5b4-42ae-9d92-6b05e7919f4d.png",
+      "title": "HTML Canvas desde cero",
+      "stars": 5,
+      "type": "E-Book",
+      "price": 16,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 23,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/bc8d9f08-7f85-442a-afb4-10a2a568d504.png",
+      "title": "Azure Fundamentls",
+      "stars": 4.5,
+      "type": "Taller",
+      "price": 10,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 24,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/35d81cae-b9b2-4fbd-9329-8bd20e09ef9f.png",
+      "title": "Unity desde cero",
+      "stars": 4.5,
+      "type": "Curso",
+      "price": 45,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 25,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/608331fa-c0c6-4f7c-9ad7-470903923179.jpg",
+      "title": "Fundamentos de AWS",
+      "stars": 4.5,
+      "type": "Especialidad",
+      "price": 90,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 26,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/f02fc743-189f-4f00-a1af-1716961d5a36.png",
+      "title": "Asana desde cero",
+      "stars": 4.5,
+      "type": "E-Book",
+      "price": 17,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 27,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/df5d119d-6485-4fe1-8457-4e51d78c795e.png",
+      "title": "Latex desde cero",
+      "stars": 4.5,
+      "type": "Especialidad",
+      "price": 100,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 28,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/7ddc32c0-79e8-4551-a89c-f9b0007a5e13.jpg",
+      "title": "Gramatica Avanzada del Inglés",
+      "stars": 4.5,
+      "type": "Curso",
+      "price": 23,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 29,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/6cbc514c-1e04-4bf4-8beb-fa595f363d9d.png",
+      "title": "Spring desde cero",
+      "stars": 4.5,
+      "type": "Curso",
+      "price": 22,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 30,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/e737f2e3-92b3-400e-8d82-1b19e0277012.png",
+      "title": "Server Side Render con Go",
+      "stars": 4.5,
+      "type": "Curso",
+      "price": 13,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 31,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/e00495a5-a7af-41c8-92ec-63702b540b03.jpg",
+      "title": "Mi primera página web",
+      "stars": 4.5,
+      "type": "Curso",
+      "price": "free",
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 32,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/702ee41e-5189-4d93-b1a3-c4818f542888.png",
+      "title": "PrestaShop desde cero",
+      "stars": 4.5,
+      "type": "E-Book",
+      "price": 15,
+      "teacher": "Johan Castillo",
+      "teacherImg": "https://scontent-lim1-1.cdninstagram.com/v/t51.2885-19/s150x150/41138827_478373809328665_5784876568920719360_n.jpg?_nc_ht=scontent-lim1-1.cdninstagram.com&_nc_ohc=ApBaKpppVx0AX_-C2gF&tp=1&oh=efdfd7a1484b78234f4639e102c20ad2&oe=602C6874",
+      "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+      "id": 100,
+      "image": "https://edteam-media.s3.amazonaws.com/courses/medium/59fbcbab-90ee-4971-b804-a29ca9d5f484.png",
+      "title": "VIM Desde Cero",
+      "stars": 0,
+      "type": "",
+      "price": "20",
+      "teacher": "Alexys Losada",
+      "teacherImg": "https://edteam-media.s3.amazonaws.com/users/thumbnail/66f015b2-0dfb-4ba9-bd0d-f7a7e1855275.jpeg",
+      "description": "Aprende los comandos básicos para utilizar el editor de texto más poderoso del mundo."
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "Diseño",
+      "image": "https://johancastillo.github.io/ducation360-images/images/categories/design.jpg",
+      "courses": 4,
+      "specialties": 1,
+      "ebooks": 2,
+      "posts": 3
+    },
+    {
+      "id": 2,
+      "title": "Desarrollo",
+      "image": "https://johancastillo.github.io/ducation360-images/images/categories/development.jpg",
+      "courses": 4,
+      "specialties": 1,
+      "ebooks": 2,
+      "posts": 1
+    },
+    {
+      "id": 3,
+      "title": "Marketing",
+      "image": "https://johancastillo.github.io/ducation360-images/images/categories/marketing.jpg",
+      "courses": 4,
+      "specialties": 1,
+      "ebooks": 2,
+      "posts": 6
+    },
+    {
+      "id": 4,
+      "title": "Informática y Software",
+      "image": "https://johancastillo.github.io/ducation360-images/images/categories/it-and-software.jpg",
+      "courses": 4,
+      "specialties": 1,
+      "ebooks": 2,
+      "posts": 3
+    },
+    {
+      "id": 5,
+      "title": "Desarrollo Personal",
+      "image": "https://johancastillo.github.io/ducation360-images/images/categories/personal-development.jpg",
+      "courses": 4,
+      "specialties": 1,
+      "ebooks": 2,
+      "posts": 8
+    },
+    {
+      "id": 6,
+      "title": "Negocios",
+      "image": "https://johancastillo.github.io/ducation360-images/images/categories/business.jpg",
+      "courses": 4,
+      "specialties": 1,
+      "ebooks": 2,
+      "posts": 5
+    },
+    {
+      "id": 7,
+      "title": "Fotografía",
+      "image": "https://johancastillo.github.io/ducation360-images/images/categories/photography.jpg",
+      "courses": 4,
+      "specialties": 1,
+      "ebooks": 2,
+      "posts": 9
+    },
+    {
+      "id": 8,
+      "title": "Música",
+      "image": "https://johancastillo.github.io/ducation360-images/images/categories/music.jpg",
+      "courses": 4,
+      "specialties": 1,
+      "ebooks": 2,
+      "posts": 2
+    },
+    {
+      "id": 9,
+      "title": "Matemáticas",
+      "image": "https://johancastillo.github.io/ducation360-images/images/categories/matematicas.png",
+      "courses": 4,
+      "specialties": 1,
+      "ebooks": 2,
+      "posts": 3
+    },
+    {
+      "id": 10,
+      "title": "Física",
+      "image": "https://johancastillo.github.io/ducation360-images/images/categories/fisica.png",
+      "courses": 4,
+      "specialties": 1,
+      "ebooks": 2,
+      "posts": 5
+    },
+    {
+      "id": 11,
+      "title": "Electrónica",
+      "image": "https://johancastillo.github.io/ducation360-images/images/categories/electronica.png",
+      "courses": 4,
+      "specialties": 1,
+      "ebooks": 2,
+      "posts": 3
+    },
+    {
+      "id": 12,
+      "title": "Lengua y literatura",
+      "image": "https://johancastillo.github.io/ducation360-images/images/categories/literatura.png",
+      "courses": 4,
+      "specialties": 1,
+      "ebooks": 2,
+      "posts": 4
+    },
+    {
+      "id": 13,
+      "title": "Química",
+      "image": "https://johancastillo.github.io/ducation360-images/images/categories/quimica.png",
+      "courses": 4,
+      "specialties": 1,
+      "ebooks": 2,
+      "posts": 10
+    },
+    {
+      "id": 14,
+      "title": "Inglés",
+      "image": "https://johancastillo.github.io/ducation360-images/images/categories/ingles.png",
+      "courses": 4,
+      "specialties": 1,
+      "ebooks": 2,
+      "posts": 13
+    },
+    {
+      "id": 15,
+      "title": "Geografía",
+      "image": "https://johancastillo.github.io/ducation360-images/images/categories/geografia.png",
+      "courses": 4,
+      "specialties": 1,
+      "ebooks": 2,
+      "posts": 4
+    },
+    {
+      "id": 16,
+      "title": "Cocina",
+      "image": "https://johancastillo.github.io/ducation360-images/images/categories/food.png",
+      "courses": 4,
+      "specialties": 1,
+      "ebooks": 2,
+      "posts": 3
+    },
+    {
+      "id": 17,
+      "title": "Educación para niños",
+      "image": "https://johancastillo.github.io/ducation360-images/images/categories/kids.png",
+      "courses": 4,
+      "specialties": 1,
+      "ebooks": 2,
+      "posts": 3
+    },
+    {
+      "id": 18,
+      "title": "Deportes",
+      "image": "https://johancastillo.github.io/ducation360-images/images/categories/deporte.png",
+      "courses": 4,
+      "specialties": 1,
+      "ebooks": 2,
+      "posts": 3
+    },
+    {
+      "id": 19,
+      "title": "Finanzas",
+      "image": "https://johancastillo.github.io/ducation360-images/images/categories/finanzas.png",
+      "courses": 4,
+      "specialties": 1,
+      "ebooks": 2,
+      "posts": 7
+    },
+    {
+      "id": 20,
+      "title": "Dibujo",
+      "image": "https://johancastillo.github.io/ducation360-images/images/categories/dibujo.png",
+      "courses": 4,
+      "specialties": 1,
+      "ebooks": 2,
+      "posts": 4
+    },
+    {
+      "id": 21,
+      "title": "Arquitectura",
+      "image": "https://johancastillo.github.io/ducation360-images/images/categories/arquitectura.png",
+      "courses": 4,
+      "specialties": 1,
+      "ebooks": 2,
+      "posts": 2
+    },
+    {
+      "id": 22,
+      "title": "Contabilidad",
+      "image": "https://johancastillo.github.io/ducation360-images/images/categories/contabilidad.png",
+      "courses": 4,
+      "specialties": 1,
+      "ebooks": 2,
+      "posts": 2
+    },
+    {
+      "id": 23,
+      "title": "Economía",
+      "image": "https://johancastillo.github.io/ducation360-images/images/categories/economia.png",
+      "courses": 4,
+      "specialties": 1,
+      "ebooks": 2,
+      "posts": 3
+    }
+  ],
+  "teachers": [],
+  "articles": [
+    {
+      "id": 1,
+      "title": "WhatsApp, Telegram o Signal, ¿cuál prefieres?",
+      "description": "Luego de que WhatsApp anunció que cambiará sus condiciones de uso, el mundo entero comenzó a buscar alternativas, ¿dejarías de usar WhatsApp? ¿Quieres saber qué otras opciones tienes? ¡Descúbrelas en este blog! 🧐",
+      "content": "<p>La semana pasada WhatsApp nos notificó que aplicará nuevas condiciones de uso a partir del próximo 8 de febrero. Si queremos seguir usando la app, debemos aceptarlas pero, ¿viste de qué se trata?, ¿o aceptaste sin pensarlo dos veces? Es normal que hayas respondido un \"sí\" a esta última pregunta. 😏 En este blog te mostraré las otras opciones de mensajería que están en la mira de todos: Telegram y Signal, y las compararemos con WhatsApp. De este modo, será más fácil para ti (o eso espero) escoger una nueva aplicación o al menos sabrás qué pierdes y qué ganas si te quedas en WhatsApp. ¡Comencemos! 🚀</p><p>Pero primero, <b>¿de qué tratan las nuevas condiciones de WhatsApp?</b></p><p>El 6 enero WhatsApp mostró una notificación en la que anunciaba que las condiciones de uso cambiarán a partir del 8 de febrero y comenzará a compartir datos con Facebook. ¿Qué datos? Básicamente todos los que recopila de forma automática de tu cuenta: tu número de teléfono, tu agenda de contactos y los datos que tienes en cada uno de ellos, datos de uso (cuánto tiempo estuviste conectado en la app, a qué hora), geolocalización e información que compartiste con terceros.</p><p>Por si no lo sabías, WhatsApp recopila también información de tu dispositivo y su conexión. Toma las cookies para recordarte tus preferencias, el idioma que usas y ayudarte a seguir personalizando tus servicios. Toda esta información se recopila una vez instalas, accedes y usas el servicio. ¿Sabías todo esto?</p><img height=\"200px\" class=\"my-4\" src=\"https://edteam-media.s3.amazonaws.com/blogs/original/61db737e-d2eb-4500-8f7d-ec2c79df0b34.jpg\" alt=\"\"><p>Ahora bien, comparemos estas tres aplicaciones y veamos qué tiene que ofrecer cada una en cuanto a las principales características:</p><br/><h4>Privacidad</h4><p>Este es el aspecto principal por el que muchos están dejando WhatsApp y están migrando a otras mensajerías. ¿Sabes qué datos toma cada una de ellas?</p><p><b>WhatsApp</b> solicita 22 permisos para acceder a tu correo electrónico, tu número de teléfono, datos de publicidad, historial de compra, ubicación aproximada, experiencia de fallos, rendimiento y muchos más. 😴 Cada uno de estos datos se vincula a tu identidad. WhatsApp hace esto con el fin de evaluar tu experiencia en la plataforma. Sin embargo, no es favorable para ti como usuario, ya que cada vez habrá más información sobre ti en los servidores de Facebook.</p><p><b>Telegram</b>, a diferencia de WhatsApp, solicita acceso a tu número de teléfono, a tu agenda de contactos, nombre de tu cuenta y ID de usuario. ¡Solo 4 datos! 😱</p><p>En este aspecto, <b>Signal</b> es el ganador indiscutible. Solo toma tu número de teléfono. 🤴</p><br/><h4>Cifrado</h4><p><b>WhatsApp</b> cuenta con cifrado de extremo a extremo. Como aseguran en su web, los mensajes y llamadas están protegidos para que solo las personas con las que te comunicas los puedan leer o escuchar sin que nadie más, ni siquiera WhatsApp, lo pueda hacer. 🙈</p><p><b>Telegram</b>, por su parte, admite dos capas de cifrado seguro. El cifrado <b>servidor-cliente</b>, que se utiliza en los chats en la nube (chats privados y grupales) y los chats secretos utilizan una capa adicional de cifrado <b>cliente-cliente</b>. Todos los datos, independientemente del tipo, se cifran de la misma manera, ya sea texto o archivos.</p><p><b>Signal</b> cuenta con cifrado de extremo a extremo y está respaldado por su protocolo de código abierto. No pueden ver tus mensajes, ni escuchar tus llamadas, nunca. 🔒</p>"
+    }
+  ]
 }
