@@ -9,6 +9,7 @@ import AppContext from '../../context/AppContext'
 import axios from 'axios'
 import Loading from '../../components/loading/Loading'
 import Footer from '../../components/footer/Footer'
+import Navigation from '../../components/navigation/Navigation'
 
 
 
@@ -45,7 +46,7 @@ const Home = () => {
     // Rendering component
     return (
         <>
-
+            <Navigation />
 
             <div className="home">
                 <Banner />
@@ -95,6 +96,7 @@ const Home = () => {
                     Profesores más populares
                 </h3>
 
+                
 
 
                 <h2 className="m-4">Categorias principales</h2>

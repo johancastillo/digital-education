@@ -22,6 +22,7 @@ import Bloguers from './blog/blogers/Bloguers'
 import Article from './blog/article/Article'
 import Classroom from './pages/classroom/Classroom'
 import CoursesList from './pages/courses-list/CoursesList'
+import HomeTwo from './pages/home-two/HomeTwo'
 
 
 const App = () => {
@@ -29,10 +30,11 @@ const App = () => {
   return (
     
       <Router>
-        <Navigation />
+        
         <ToUp />
 
         <Switch>
+          <Route exact path="/home" component={HomeTwo} />
           <Route exact path="/" component={Home} />
           <Route exact path="/blog" component={BlogHome} />
           <Route exact path="/cursos" component={CoursesList} />
