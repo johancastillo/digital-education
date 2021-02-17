@@ -20,14 +20,35 @@ const Navigation = () => {
                 <div className="box-logo">
                     <span className="icon-menu" style={{ cursor: 'pointer' }} onClick={openMenu}></span>
 
-                    <div>
-                        <Link to="/">
+                    <Link to="/">
+                        <a>
                             <img className="mx-2" src={logo} alt="logo" />
-                        </Link>
+                        </a>
+                    </Link>
 
-                        <button type="button" className="btn btn-info" style={{ marginLeft: '10px' }}>
+
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
                             Explorar
-                        </button>
+                            </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <div className="conatiner d-flex">
+                                <div className="col-6">
+                                    <li><button class="dropdown-item" type="button">Matemáticas</button></li>
+                                    <li><button class="dropdown-item" type="button">Desarrollo de Software</button></li>
+                                    <li><button class="dropdown-item" type="button">Diseño</button></li>
+                                    <li><button class="dropdown-item" type="button">Física</button></li>
+                                </div>
+                                <div className="col-6">
+                                    <li><button class="dropdown-item" type="button">Matemáticas</button></li>
+                                    <li><button class="dropdown-item" type="button">Desarrollo de Software</button></li>
+                                    <li><button class="dropdown-item" type="button">Diseño</button></li>
+                                    <li><button class="dropdown-item" type="button">Física</button></li>
+                                </div>
+                            </div>
+                        </ul>
 
                     </div>
                 </div>
@@ -93,29 +114,11 @@ const Navigation = () => {
                         </li>
 
                         <li>
-                            <Link to="/development">Categoría</Link>
-                        </li>
-
-                        <li>
-                            <Link to="/student-profile">Estudiante perfil</Link>
-                        </li>
-
-                        <li>
                             <Link to="/blog">Nuestro blog</Link>
                         </li>
 
                         <li>
                             <Link to="/cursos">Cursos</Link>
-                        </li>
-
-                        <li>
-                            <Link to="/blog/bloguers">Bloguers</Link>
-                        </li>
-
-                        <li>
-                            <Link to="/admin/create-course">
-                                Crear cursos
-                            </Link>
                         </li>
 
                         <li>

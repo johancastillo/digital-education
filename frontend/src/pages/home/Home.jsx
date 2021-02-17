@@ -46,9 +46,8 @@ const Home = () => {
     // Rendering component
     return (
         <>
-            <Navigation />
 
-            <div className="home">
+            <div className="page">
                 <Banner />
 
 

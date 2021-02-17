@@ -30,7 +30,7 @@ const App = () => {
   return (
     
       <Router>
-        
+        <Navigation />
         <ToUp />
 
         <Switch>
